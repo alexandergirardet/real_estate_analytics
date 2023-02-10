@@ -23,7 +23,7 @@ class RealEstateExtractionPipeline:
         self.bucket_name = 'rightmove_storage_dev'
 
     def get_access_token(self):
-        f = open('../access_token.txt', 'r')
+        f = open('./access_token.txt', 'r')
         token_text = f.read()  
         token = token_text.replace('\n', '')
 
@@ -47,7 +47,7 @@ class RealEstateExtractionPipeline:
 
         print(len(self.items))
 
-        if len(self.items) >= 5:  # Batch size of file
+        if len(self.items) >= 50:  # Batch size of file
 
             self.send_items_to_bucket()
 
@@ -70,7 +70,7 @@ class RealEstateExtractionPipeline:
 
         data = '\n'.join(json.dumps(d) for d in self.items)
         
-        api_url = f"https://www.googleapis.com/upload/storage/v1/b/{self.bucket_name}/o?uploadType=media&name=jsondata/{file_id}.ndjson"
+        api_url = f"https://www.googleapis.com/upload/storage/v1/b/{self.bucket_name}/o?uploadType=media&name=rightmove/raw_data/{file_id}.ndjson"
         headers = {
             "Authorization": f"Bearer {self.token}",
             "Content-Type": "application/json"

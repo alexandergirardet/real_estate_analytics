@@ -1,5 +1,5 @@
 import scrapy
-import psycopg2
+# import psycopg2
 import csv
 
 from bs4 import BeautifulSoup
@@ -37,7 +37,7 @@ class RightmoveSpider(scrapy.Spider):
         for codes in self.fetched_outcodes:
             rightmove_code = codes[1]
             postcode = codes[0]
-            for index_jump in range(0, 1000, 25):
+            for index_jump in range(0, 100, 25): # Adjusting to 100 so I can have some extra values to test with
                 url = f"https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E{rightmove_code}&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index={index_jump}&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false"
 
                 yield scrapy.Request(method='GET', url = url, headers= self.headers, callback=self.parse)
@@ -79,9 +79,8 @@ class RightmoveSpider(scrapy.Spider):
 
         yield item
 
-
     def get_outcodes(self) -> list:
-        with open('../rightmove_outcodes.csv', 'r') as f:
+        with open('./rightmove_outcodes.csv', 'r') as f:
             reader = csv.reader(f)
             outcodes = list(reader)
             outcodes = outcodes[1:]
