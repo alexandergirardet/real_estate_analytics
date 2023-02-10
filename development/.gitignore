@@ -1,0 +1,10 @@
+# Ignore sensitive files
+.env
+real-estate-dev-key.json
+access_token.txt
+
+# Ignore Mac files
+.DS_Store
+
+# Ignore cache files
+.ipynb_checkpoints

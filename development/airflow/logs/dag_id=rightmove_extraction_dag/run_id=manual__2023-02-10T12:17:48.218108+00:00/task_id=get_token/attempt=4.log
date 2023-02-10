@@ -1,0 +1,36 @@
+[2023-02-10 12:24:01,069] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.get_token manual__2023-02-10T12:17:48.218108+00:00 [queued]>
+[2023-02-10 12:24:01,076] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.get_token manual__2023-02-10T12:17:48.218108+00:00 [queued]>
+[2023-02-10 12:24:01,079] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-10 12:24:01,084] {taskinstance.py:1357} INFO - Starting attempt 4 of 6
+[2023-02-10 12:24:01,086] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-10 12:24:01,107] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): get_token> on 2023-02-10 12:17:48.218108+00:00
+[2023-02-10 12:24:01,117] {standard_task_runner.py:52} INFO - Started process 329 to run task
+[2023-02-10 12:24:01,125] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'rightmove_extraction_dag', 'get_token', 'manual__2023-02-10T12:17:48.218108+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/rightmove_extraction_dag.py', '--cfg-path', '/tmp/tmpeo_7rugl', '--error-file', '/tmp/tmp7_hmnd0n']
+[2023-02-10 12:24:01,128] {standard_task_runner.py:80} INFO - Job 9: Subtask get_token
+[2023-02-10 12:24:01,230] {task_command.py:369} INFO - Running <TaskInstance: rightmove_extraction_dag.get_token manual__2023-02-10T12:17:48.218108+00:00 [running]> on host 132093137b1e
+[2023-02-10 12:24:01,352] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alex
+AIRFLOW_CTX_DAG_ID=rightmove_extraction_dag
+AIRFLOW_CTX_TASK_ID=get_token
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-10T12:17:48.218108+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-10T12:17:48.218108+00:00
+[2023-02-10 12:24:01,358] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-02-10 12:24:01,361] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd /app && ./script.sh ']
+[2023-02-10 12:24:01,381] {subprocess.py:85} INFO - Output:
+[2023-02-10 12:24:01,424] {subprocess.py:92} INFO - ./script.sh: line 5: gcloud: command not found
+[2023-02-10 12:24:01,428] {subprocess.py:92} INFO - ./script.sh: line 9: gcloud: command not found
+[2023-02-10 12:24:01,448] {subprocess.py:92} INFO - ./script.sh: line 13: gcloud: command not found
+[2023-02-10 12:24:01,451] {subprocess.py:96} INFO - Command exited with return code 127
+[2023-02-10 12:24:01,474] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2023-02-10 12:24:01,486] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=rightmove_extraction_dag, task_id=get_token, execution_date=20230210T121748, start_date=20230210T122401, end_date=20230210T122401
+[2023-02-10 12:24:01,505] {standard_task_runner.py:97} ERROR - Failed to execute job 9 for task get_token (Bash command failed. The command returned a non-zero exit code 127.; 329)
+[2023-02-10 12:24:01,546] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-02-10 12:24:01,585] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
