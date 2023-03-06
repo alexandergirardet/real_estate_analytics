@@ -4,7 +4,7 @@
 command1="./add_token.sh"
 $command1
 
-command2="python3 ./scrapy-test.py"
+command2="python ./scrapy-test.py"
 $command2
 
 command3="./remove_token.sh"
