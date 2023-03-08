@@ -3,26 +3,38 @@ import datetime
 import logging
 import uuid
 
+from transformer import ParquetTransformer
+
 from google.cloud import storage
 
 from dotenv import load_dotenv
+
 import pandas as pd
 
 logger = logging.getLogger(__name__)
 from io import BytesIO
 
-GCP_CREDS_PATH = "/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/real-estate-dev-key.json"
-
-
+GCP_CREDS_PATH = "~/.keys/real-estate-dev-key.json"
 
 class SilverProcessor:
 
     def __init__(self):
         self.bucket_name = "rightmove_storage_dev"
         self.client = storage.Client.from_service_account_json(json_credentials_path=GCP_CREDS_PATH)
+        self.transformer = ParquetTransformer()
 
     def fetch_all_files(self, delimiter=None):
         blobs = self.client.list_blobs(self.bucket_name, prefix=f"rightmove/raw_data/", delimiter=delimiter)
+
+        all_files = []
+
+        for blob in blobs:
+            name = blob.name
+            all_files.append(name)
+        return all_files
+    
+    def fetch_all_processed_files(self, delimiter=None):
+        blobs = self.client.list_blobs(self.bucket_name, prefix=f"rightmove/processed_data/", delimiter=delimiter)
 
         all_files = []
 
@@ -35,8 +47,6 @@ class SilverProcessor:
     
         bucket = self.client.bucket(self.bucket_name)
         file_path = f"rightmove/raw_data/{file_name}"
-        
-        print(file_path)
         
         blob = bucket.blob(file_path)
         
@@ -63,12 +73,26 @@ class SilverProcessor:
         success_flag = True
 
         return success_flag
-
-    def process_data(self):
+    
+    def get_files_to_process(self):
         files = self.fetch_all_files()
         file_names = [file.split("/")[-1] for file in files]
 
-        for file_name in file_names:
+        processed_files = self.fetch_all_processed_files()
+        processed_file_names = [file.split("/")[-1] for file in processed_files]
+        processed_file_names_json = [file_name.replace(".snappy.parquet", ".json") for file_name in processed_file_names]
+
+        unprocessed_file_names = [file for file in file_names if file not in processed_file_names_json]
+
+        return unprocessed_file_names
+
+
+    def process_data(self):
+        unprocessed_file_names = self.get_files_to_process()
+
+        print(f"Processing {len(unprocessed_file_names)} files")
+
+        for file_name in unprocessed_file_names:
             data = self.download_data(file_name)
 
             valid_data, invalid_data = self.transformer.transform_data(data)
@@ -90,3 +114,4 @@ class SilverProcessor:
 
 if __name__ == "__main__":
     processor = SilverProcessor()
+    processor.process_data()

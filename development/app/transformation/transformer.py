@@ -27,12 +27,12 @@ class ParquetTransformer:
         
     # Loading variables    
     def load_schema(self):
-        with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/notebooks/data_quality/parquet_schema.pkl', 'rb') as file:
+        with open('./data/parquet_schema.pkl', 'rb') as file:
             schema = pickle.loads(file.read())
         return schema
     
     def load_schema_columns(self):
-        with open("/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/notebooks/data_quality/columns_schema.json", "r") as file:
+        with open("./data/columns_schema.json", "r") as file:
             columns_schema = json.load(file)
         return columns_schema
     
@@ -213,3 +213,6 @@ class ParquetTransformer:
 
                 
         return validated_data, invalid_data
+    
+if __name__ == "__main__":
+    print("You triggered the transform script directly. This is not intended.")
