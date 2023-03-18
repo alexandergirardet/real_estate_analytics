@@ -5,14 +5,14 @@ x-common:
   &common
   image: extending_airflow:latest # apache/airflow:2.3.0
   user: "${AIRFLOW_UID}:0"
-  env_file: 
+  env_file:
     - .env
   volumes:
-    - ./dags:/opt/airflow/dags
-    - ./logs:/opt/airflow/logs
-    - ./plugins:/opt/airflow/plugins
+    - /Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/airflow/dags:/opt/airflow/dags
+    - /Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/airflow/logs:/opt/airflow/logs
+    - /Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/airflow/plugins:/opt/airflow/plugins
     - /var/run/docker.sock:/var/run/docker.sock
-    -  /Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/real_estate_extraction:/app
+    - /Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/app:/app
 
 x-depends-on:
   &depends-on
@@ -29,7 +29,7 @@ services:
     ports:
       - "5434:5432"
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "airflow"]
+      test: [ "CMD", "pg_isready", "-U", "airflow" ]
       interval: 5s
       retries: 5
     env_file:
@@ -53,11 +53,17 @@ services:
     ports:
       - "8080:8080"
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      test:
+        [
+          "CMD",
+          "curl",
+          "--fail",
+          "http://localhost:8080/health"
+        ]
       interval: 30s
       timeout: 30s
       retries: 5
-  
+
   airflow-init:
     <<: *common
     container_name: airflow-init

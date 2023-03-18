@@ -9,3 +9,7 @@ access_token.txt
 # Ignore cache files
 .ipynb_checkpoints
 .__pycache__
+
+__pycache__
+
+.keys

@@ -80,7 +80,7 @@ class RightmoveSpider(scrapy.Spider):
         yield item
 
     def get_outcodes(self) -> list:
-        with open('./rightmove_outcodes.csv', 'r') as f:
+        with open('.././rightmove_outcodes.csv', 'r') as f:
             reader = csv.reader(f)
             outcodes = list(reader)
             outcodes = outcodes[1:]

@@ -14,7 +14,7 @@ import pandas as pd
 logger = logging.getLogger(__name__)
 from io import BytesIO
 
-GCP_CREDS_PATH = "~/.keys/real-estate-dev-key.json"
+GCP_CREDS_PATH = "../keys/gcp-key.json"
 
 class SilverProcessor:
 

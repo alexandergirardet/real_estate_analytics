@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Execute first command
-command1="gcloud auth activate-service-account --key-file /Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/real-estate-dev-key.json"
+command1="gcloud auth activate-service-account --key-file ../.keys/gcp_key.json"
 $command1
 
 # Execute second command
