@@ -74,3 +74,13 @@ services:
         mkdir -p /sources/logs /sources/dags /sources/plugins
         chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
         exec /entrypoint airflow version
+
+  scrapyd:
+    container_name: scrapyd-app
+    image: scrapy_app:latest
+    ports:
+      - "6800:6800"
+    volumes:
+      - ./data:/var/lib/scrapyd
+      - /usr/local/lib/python3.9/dist-packages
+    restart: unless-stopped

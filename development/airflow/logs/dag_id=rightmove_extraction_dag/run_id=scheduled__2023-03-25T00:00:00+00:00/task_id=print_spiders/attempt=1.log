@@ -1,0 +1,33 @@
+[2023-03-26 01:00:47,463] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.print_spiders scheduled__2023-03-25T00:00:00+00:00 [queued]>
+[2023-03-26 01:00:50,401] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.print_spiders scheduled__2023-03-25T00:00:00+00:00 [queued]>
+[2023-03-26 01:00:50,405] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-26 01:00:50,410] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-03-26 01:00:50,416] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-26 01:00:50,524] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_spiders> on 2023-03-25 00:00:00+00:00
+[2023-03-26 01:00:51,918] {standard_task_runner.py:52} INFO - Started process 1862 to run task
+[2023-03-26 01:50:10,469] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'rightmove_extraction_dag', 'print_spiders', 'scheduled__2023-03-25T00:00:00+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/rightmove_extraction_dag.py', '--cfg-path', '/tmp/tmpfq0phup1', '--error-file', '/tmp/tmp0ele8eax']
+[2023-03-26 01:50:10,575] {standard_task_runner.py:80} INFO - Job 101: Subtask print_spiders
+[2023-03-26 01:50:18,181] {task_command.py:369} INFO - Running <TaskInstance: rightmove_extraction_dag.print_spiders scheduled__2023-03-25T00:00:00+00:00 [running]> on host 6614738016e4
+[2023-03-26 01:50:22,289] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alex
+AIRFLOW_CTX_DAG_ID=rightmove_extraction_dag
+AIRFLOW_CTX_TASK_ID=print_spiders
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-25T00:00:00+00:00
+[2023-03-26 01:50:22,556] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-26 01:50:22,595] {subprocess.py:74} INFO - Running command: ['bash', '-c', ' curl http://scrapyd-app:6800/listspiders.json?project=real_estate_extraction']
+[2023-03-26 01:50:25,319] {subprocess.py:85} INFO - Output:
+[2023-03-26 01:50:27,213] {subprocess.py:92} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2023-03-26 01:50:27,223] {subprocess.py:92} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2023-03-26 01:50:28,404] {subprocess.py:92} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    72  100    72    0     0     60      0  0:00:01  0:00:01 --:--:--    60100    72  100    72    0     0     60      0  0:00:01  0:00:01 --:--:--    60
+[2023-03-26 01:50:28,504] {subprocess.py:92} INFO - {"node_name": "fac540815f2e", "status": "ok", "spiders": ["rightmove"]}
+[2023-03-26 01:50:28,995] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-03-26 01:50:30,017] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=rightmove_extraction_dag, task_id=print_spiders, execution_date=20230325T000000, start_date=20230326T010047, end_date=20230326T015030
+[2023-03-26 01:50:31,016] {local_task_job.py:220} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2023-03-26 01:50:31,561] {process_utils.py:125} INFO - Sending Signals.SIGTERM to group 1862. PIDs of all processes in the group: [1862]
+[2023-03-26 01:50:31,566] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 1862
+[2023-03-26 01:50:31,983] {process_utils.py:75} INFO - Process psutil.Process(pid=1862, status='terminated', exitcode=0, started='01:00:51') (1862) terminated with exit code 0

@@ -1,0 +1,37 @@
+[2023-03-25 13:29:27,075] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.print_projects scheduled__2023-02-13T00:00:00+00:00 [queued]>
+[2023-03-25 13:29:27,097] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.print_projects scheduled__2023-02-13T00:00:00+00:00 [queued]>
+[2023-03-25 13:29:27,100] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-25 13:29:27,103] {taskinstance.py:1357} INFO - Starting attempt 4 of 6
+[2023-03-25 13:29:27,106] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-25 13:29:27,125] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_projects> on 2023-02-13 00:00:00+00:00
+[2023-03-25 13:29:27,140] {standard_task_runner.py:52} INFO - Started process 758 to run task
+[2023-03-25 13:29:27,157] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'rightmove_extraction_dag', 'print_projects', 'scheduled__2023-02-13T00:00:00+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/rightmove_extraction_dag.py', '--cfg-path', '/tmp/tmp_pogr8y_', '--error-file', '/tmp/tmp79tty_uo']
+[2023-03-25 13:29:27,169] {standard_task_runner.py:80} INFO - Job 45: Subtask print_projects
+[2023-03-25 13:29:27,346] {task_command.py:369} INFO - Running <TaskInstance: rightmove_extraction_dag.print_projects scheduled__2023-02-13T00:00:00+00:00 [running]> on host 6614738016e4
+[2023-03-25 13:29:27,774] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alex
+AIRFLOW_CTX_DAG_ID=rightmove_extraction_dag
+AIRFLOW_CTX_TASK_ID=print_projects
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-13T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-13T00:00:00+00:00
+[2023-03-25 13:29:27,784] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-25 13:29:27,788] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl http://localhost:6800/listprojects.json']
+[2023-03-25 13:29:27,844] {subprocess.py:85} INFO - Output:
+[2023-03-25 13:29:27,858] {subprocess.py:92} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2023-03-25 13:29:27,860] {subprocess.py:92} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2023-03-25 13:29:27,861] {subprocess.py:92} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+[2023-03-25 13:29:27,863] {subprocess.py:92} INFO - curl: (7) Failed to connect to localhost port 6800: Connection refused
+[2023-03-25 13:29:27,867] {subprocess.py:96} INFO - Command exited with return code 7
+[2023-03-25 13:29:27,906] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 194, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 7.
+[2023-03-25 13:29:27,955] {taskinstance.py:1395} INFO - Marking task as UP_FOR_RETRY. dag_id=rightmove_extraction_dag, task_id=print_projects, execution_date=20230213T000000, start_date=20230325T132927, end_date=20230325T132927
+[2023-03-25 13:29:27,985] {standard_task_runner.py:92} ERROR - Failed to execute job 45 for task print_projects (Bash command failed. The command returned a non-zero exit code 7.; 758)
+[2023-03-25 13:29:28,086] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-25 13:29:28,297] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

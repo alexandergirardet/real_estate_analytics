@@ -1,0 +1,31 @@
+[2023-03-26 02:47:15,136] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.print_spiders scheduled__2023-03-25T00:00:00+00:00 [queued]>
+[2023-03-26 02:47:15,206] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.print_spiders scheduled__2023-03-25T00:00:00+00:00 [queued]>
+[2023-03-26 02:47:15,219] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-26 02:47:15,224] {taskinstance.py:1357} INFO - Starting attempt 2 of 6
+[2023-03-26 02:47:15,228] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-26 02:47:15,279] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_spiders> on 2023-03-25 00:00:00+00:00
+[2023-03-26 02:47:15,386] {standard_task_runner.py:52} INFO - Started process 1895 to run task
+[2023-03-26 02:47:15,474] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'rightmove_extraction_dag', 'print_spiders', 'scheduled__2023-03-25T00:00:00+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/rightmove_extraction_dag.py', '--cfg-path', '/tmp/tmp4pvlodfh', '--error-file', '/tmp/tmpyhaoidkm']
+[2023-03-26 02:47:15,560] {standard_task_runner.py:80} INFO - Job 102: Subtask print_spiders
+[2023-03-26 02:47:16,220] {task_command.py:369} INFO - Running <TaskInstance: rightmove_extraction_dag.print_spiders scheduled__2023-03-25T00:00:00+00:00 [running]> on host 6614738016e4
+[2023-03-26 02:47:16,921] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alex
+AIRFLOW_CTX_DAG_ID=rightmove_extraction_dag
+AIRFLOW_CTX_TASK_ID=print_spiders
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-25T00:00:00+00:00
+[2023-03-26 02:47:17,079] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-26 02:47:17,108] {subprocess.py:74} INFO - Running command: ['bash', '-c', ' curl http://scrapyd-app:6800/listspiders.json?project=real_estate_extraction']
+[2023-03-26 02:47:17,833] {subprocess.py:85} INFO - Output:
+[2023-03-26 02:47:18,610] {subprocess.py:92} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2023-03-26 02:47:18,643] {subprocess.py:92} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2023-03-26 02:47:20,339] {subprocess.py:92} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100    72  100    72    0     0     41      0  0:00:01  0:00:01 --:--:--    41
+[2023-03-26 02:47:20,419] {subprocess.py:92} INFO - {"node_name": "fac540815f2e", "status": "ok", "spiders": ["rightmove"]}
+[2023-03-26 02:47:20,562] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-03-26 02:47:21,063] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=rightmove_extraction_dag, task_id=print_spiders, execution_date=20230325T000000, start_date=20230326T024715, end_date=20230326T024721
+[2023-03-26 02:47:21,541] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-26 02:47:22,138] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

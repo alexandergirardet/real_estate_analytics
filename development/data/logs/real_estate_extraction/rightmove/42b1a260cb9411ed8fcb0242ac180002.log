@@ -1,0 +1,604 @@
+2023-03-26 06:15:59 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: real_estate_extraction)
+2023-03-26 06:16:00 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.2 (default, Feb 28 2021, 17:03:44) - [GCC 10.2.1 20210110], pyOpenSSL 23.1.0 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.1, Platform Linux-5.15.49-linuxkit-aarch64-with-glibc2.31
+2023-03-26 06:16:00 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'real_estate_extraction',
+ 'LOG_FILE': '/var/lib/scrapyd/logs/real_estate_extraction/rightmove/42b1a260cb9411ed8fcb0242ac180002.log',
+ 'NEWSPIDER_MODULE': 'real_estate_extraction.spiders',
+ 'SPIDER_MODULES': ['real_estate_extraction.spiders']}
+2023-03-26 06:16:00 [py.warnings] WARNING: /usr/local/lib/python3.9/dist-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2023-03-26 06:16:00 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2023-03-26 06:16:00 [scrapy.extensions.telnet] INFO: Telnet Password: 5e6401ced683158b
+2023-03-26 06:16:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-26 07:25:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-26 07:25:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-26 07:25:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['real_estate_extraction.pipelines.RealEstateExtractionPipeline']
+2023-03-26 07:25:43 [scrapy.core.engine] INFO: Spider opened
+2023-03-26 07:25:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-26 07:25:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6029
+2023-03-26 08:04:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-26 08:04:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false took longer than 180.0 seconds..
+2023-03-26 08:04:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false took longer than 180.0 seconds..
+2023-03-26 08:04:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false took longer than 180.0 seconds..
+2023-03-26 08:04:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false took longer than 180.0 seconds..
+2023-03-26 08:04:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false took longer than 180.0 seconds..
+2023-03-26 08:04:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false took longer than 180.0 seconds..
+2023-03-26 08:04:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false took longer than 180.0 seconds..
+2023-03-26 08:04:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.rightmove.co.uk/properties/132896066> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E5&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E5&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/120172454> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/123831017> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/123251729> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/115833383> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896066> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/85576926> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132807017> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/120172454>
+1
+2023-03-26 08:04:47 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (1)
+2023-03-26 08:04:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/123831017>
+2
+2023-03-26 08:04:47 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (2)
+2023-03-26 08:04:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/123251729>
+3
+2023-03-26 08:04:48 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (3)
+2023-03-26 08:04:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/115833383>
+4
+2023-03-26 08:04:49 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (4)
+2023-03-26 08:04:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/127580510> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896066>
+5
+2023-03-26 08:04:49 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (5)
+2023-03-26 08:04:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/85576926>
+6
+2023-03-26 08:04:49 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (6)
+2023-03-26 08:04:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132807017>
+7
+2023-03-26 08:04:50 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (7)
+2023-03-26 08:04:50 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 26 pages/min), scraped 7 items (at 7 items/min)
+2023-03-26 08:04:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/127580510>
+8
+2023-03-26 08:04:51 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (8)
+2023-03-26 08:04:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131134463> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132807020> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896087> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132802304> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132807023> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132809024> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:04:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132934124> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 08:05:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131134463>
+9
+2023-03-26 08:05:01 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (9)
+2023-03-26 08:06:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132807020>
+10
+2023-03-26 08:06:35 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (10)
+2023-03-26 08:06:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896087>
+11
+2023-03-26 08:06:36 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (11)
+2023-03-26 08:33:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132802304>
+12
+2023-03-26 08:33:42 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (12)
+2023-03-26 08:33:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132807023>
+13
+2023-03-26 08:33:43 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (13)
+2023-03-26 09:27:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132809024>
+14
+2023-03-26 09:27:02 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (14)
+2023-03-26 09:27:02 [scrapy.extensions.logstats] INFO: Crawled 33 pages (at 7 pages/min), scraped 14 items (at 7 items/min)
+2023-03-26 09:27:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132702281> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132702281 took longer than 180.0 seconds..
+2023-03-26 09:27:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/129812885> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/129812885 took longer than 180.0 seconds..
+2023-03-26 09:27:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132717917> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132717917 took longer than 180.0 seconds..
+2023-03-26 09:27:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132080804> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132080804 took longer than 180.0 seconds..
+2023-03-26 09:27:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/80400863> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/80400863 took longer than 180.0 seconds..
+2023-03-26 09:27:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132733928> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132733928 took longer than 180.0 seconds..
+2023-03-26 09:27:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132871178> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132871178 took longer than 180.0 seconds..
+2023-03-26 09:27:06 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132739772> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132739772 took longer than 180.0 seconds..
+2023-03-26 09:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132934124>
+15
+2023-03-26 09:27:07 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (15)
+2023-03-26 09:27:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132741392> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132915521> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131370095> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132757718> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132756773> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132654749> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132756761> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132741392>
+16
+2023-03-26 09:27:14 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (16)
+2023-03-26 09:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132915521>
+17
+2023-03-26 09:27:15 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (17)
+2023-03-26 09:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132763169> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 09:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131370095>
+18
+2023-03-26 09:27:18 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (18)
+2023-03-26 09:27:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132757718>
+19
+2023-03-26 09:27:19 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (19)
+2023-03-26 11:25:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132756773>
+20
+2023-03-26 11:25:07 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (20)
+2023-03-26 11:25:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132654749>
+21
+2023-03-26 11:25:09 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (21)
+2023-03-26 11:25:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132756761>
+22
+2023-03-26 11:25:11 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (22)
+2023-03-26 11:25:11 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 8 pages/min), scraped 22 items (at 8 items/min)
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/130106714> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/130106714 took longer than 180.0 seconds..
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132769127> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132769127 took longer than 180.0 seconds..
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132769172> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132769172 took longer than 180.0 seconds..
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132779798> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132779798 took longer than 180.0 seconds..
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/77631575> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/77631575 took longer than 180.0 seconds..
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/84132740> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/84132740 took longer than 180.0 seconds..
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132781355> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132781355 took longer than 180.0 seconds..
+2023-03-26 11:25:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132792089> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132792089 took longer than 180.0 seconds..
+2023-03-26 11:25:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132763169>
+23
+2023-03-26 11:25:12 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (23)
+2023-03-26 11:25:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132814130> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132796838> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132817679> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132870683> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/119701796> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132824612> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/78514493> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132824615> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-26 11:25:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132814130>
+24
+2023-03-26 11:42:22 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (24)
+2023-03-26 11:42:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132796838>
+25
+2023-03-26 11:42:30 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (25)
+2023-03-26 11:42:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132817679>
+26
+2023-03-26 11:42:31 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (26)
+2023-03-26 11:42:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132870683>
+27
+2023-03-26 11:42:31 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (27)
+2023-03-26 11:42:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/119701796>
+28
+2023-03-26 11:42:32 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0xffffa5a673a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/utils/defer.py", line 312, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/extensions/feedexport.py", line 465, in item_scraped
+    slot.exporter.export_item(item)
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 112, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/usr/local/lib/python3.9/dist-packages/scrapy/exporters.py", line 67, in _get_serialized_fields
+    item = ItemAdapter(item)
+  File "/usr/local/lib/python3.9/dist-packages/itemadapter/adapter.py", line 296, in __init__
+    raise TypeError(f"No adapter found for objects of type: {type(item)} ({item})")
+TypeError: No adapter found for objects of type: <class 'int'> (28)
+2023-03-26 11:42:34 [scrapy.extensions.logstats] INFO: Crawled 49 pages (at 8 pages/min), scraped 28 items (at 6 items/min)
+2023-03-26 11:42:35 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132922388> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132922388 took longer than 180.0 seconds..
+2023-03-26 12:11:27 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132862232> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132862232 took longer than 180.0 seconds..
+2023-03-26 12:11:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132866615> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132866615 took longer than 180.0 seconds..
+2023-03-26 12:11:49 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132866612> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132866612 took longer than 180.0 seconds..
+2023-03-26 12:11:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/132202640> (failed 1 times): User timeout caused connection failure: Getting https://www.rightmove.co.uk/properties/132202640 took longer than 180.0 seconds..

@@ -3284,3 +3284,255 @@
 [2023-03-23 21:20:52,508] {logging_mixin.py:115} INFO - [2023-03-23 21:20:52,508] {dag.py:2371} INFO - Sync 1 DAGs
 [2023-03-23 21:20:52,546] {logging_mixin.py:115} INFO - [2023-03-23 21:20:52,545] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
 [2023-03-23 21:20:52,564] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.228 seconds
+[2023-03-23 21:21:22,693] {processor.py:153} INFO - Started process (PID=6780) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:21:22,696] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:21:22,698] {logging_mixin.py:115} INFO - [2023-03-23 21:21:22,698] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:21:22,737] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:21:22,842] {logging_mixin.py:115} INFO - [2023-03-23 21:21:22,842] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:21:22,881] {logging_mixin.py:115} INFO - [2023-03-23 21:21:22,881] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:21:22,893] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.215 seconds
+[2023-03-23 21:21:53,074] {processor.py:153} INFO - Started process (PID=6785) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:21:53,080] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:21:53,086] {logging_mixin.py:115} INFO - [2023-03-23 21:21:53,086] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:21:53,126] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:21:53,210] {logging_mixin.py:115} INFO - [2023-03-23 21:21:53,210] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:21:53,255] {logging_mixin.py:115} INFO - [2023-03-23 21:21:53,255] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:21:53,285] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.224 seconds
+[2023-03-23 21:22:23,596] {processor.py:153} INFO - Started process (PID=6790) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:22:23,600] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:22:23,603] {logging_mixin.py:115} INFO - [2023-03-23 21:22:23,603] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:22:23,637] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:22:23,724] {logging_mixin.py:115} INFO - [2023-03-23 21:22:23,724] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:22:23,804] {logging_mixin.py:115} INFO - [2023-03-23 21:22:23,804] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:22:23,862] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.280 seconds
+[2023-03-23 21:22:54,163] {processor.py:153} INFO - Started process (PID=6795) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:22:54,168] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:22:54,169] {logging_mixin.py:115} INFO - [2023-03-23 21:22:54,169] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:22:54,215] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:22:54,299] {logging_mixin.py:115} INFO - [2023-03-23 21:22:54,298] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:22:54,333] {logging_mixin.py:115} INFO - [2023-03-23 21:22:54,333] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:22:54,342] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.197 seconds
+[2023-03-23 21:23:24,563] {processor.py:153} INFO - Started process (PID=6800) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:23:24,570] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:23:24,573] {logging_mixin.py:115} INFO - [2023-03-23 21:23:24,573] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:23:24,610] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:23:24,697] {logging_mixin.py:115} INFO - [2023-03-23 21:23:24,697] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:23:24,756] {logging_mixin.py:115} INFO - [2023-03-23 21:23:24,756] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:23:24,788] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.271 seconds
+[2023-03-23 21:23:55,074] {processor.py:153} INFO - Started process (PID=6805) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:23:55,080] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:23:55,082] {logging_mixin.py:115} INFO - [2023-03-23 21:23:55,082] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:23:55,135] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:23:55,236] {logging_mixin.py:115} INFO - [2023-03-23 21:23:55,236] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:23:55,286] {logging_mixin.py:115} INFO - [2023-03-23 21:23:55,286] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:23:55,301] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.244 seconds
+[2023-03-23 21:24:25,629] {processor.py:153} INFO - Started process (PID=6810) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:24:25,634] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:24:25,639] {logging_mixin.py:115} INFO - [2023-03-23 21:24:25,639] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:24:25,678] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:24:25,733] {logging_mixin.py:115} INFO - [2023-03-23 21:24:25,730] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:24:25,761] {logging_mixin.py:115} INFO - [2023-03-23 21:24:25,761] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:24:25,774] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.157 seconds
+[2023-03-23 21:24:55,905] {processor.py:153} INFO - Started process (PID=6815) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:24:55,907] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:24:55,909] {logging_mixin.py:115} INFO - [2023-03-23 21:24:55,909] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:24:55,938] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:24:56,029] {logging_mixin.py:115} INFO - [2023-03-23 21:24:56,028] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:24:56,109] {logging_mixin.py:115} INFO - [2023-03-23 21:24:56,108] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:24:56,121] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.223 seconds
+[2023-03-23 21:25:26,359] {processor.py:153} INFO - Started process (PID=6820) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:25:26,361] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:25:26,363] {logging_mixin.py:115} INFO - [2023-03-23 21:25:26,363] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:25:26,393] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:25:26,458] {logging_mixin.py:115} INFO - [2023-03-23 21:25:26,458] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:25:26,488] {logging_mixin.py:115} INFO - [2023-03-23 21:25:26,487] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:25:26,502] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.160 seconds
+[2023-03-23 21:25:56,622] {processor.py:153} INFO - Started process (PID=6825) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:25:56,627] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:25:56,630] {logging_mixin.py:115} INFO - [2023-03-23 21:25:56,630] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:25:56,683] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:25:56,750] {logging_mixin.py:115} INFO - [2023-03-23 21:25:56,750] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:25:56,784] {logging_mixin.py:115} INFO - [2023-03-23 21:25:56,783] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:25:56,795] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.194 seconds
+[2023-03-23 21:26:27,055] {processor.py:153} INFO - Started process (PID=6830) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:26:27,058] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:26:27,059] {logging_mixin.py:115} INFO - [2023-03-23 21:26:27,059] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:26:27,092] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:26:27,158] {logging_mixin.py:115} INFO - [2023-03-23 21:26:27,157] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:26:27,189] {logging_mixin.py:115} INFO - [2023-03-23 21:26:27,189] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:26:27,200] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.156 seconds
+[2023-03-23 21:26:57,335] {processor.py:153} INFO - Started process (PID=6835) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:26:57,337] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:26:57,339] {logging_mixin.py:115} INFO - [2023-03-23 21:26:57,339] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:26:57,373] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:26:57,467] {logging_mixin.py:115} INFO - [2023-03-23 21:26:57,466] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:26:57,495] {logging_mixin.py:115} INFO - [2023-03-23 21:26:57,495] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:26:57,514] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.189 seconds
+[2023-03-23 21:27:27,654] {processor.py:153} INFO - Started process (PID=6840) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:27:27,656] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:27:27,657] {logging_mixin.py:115} INFO - [2023-03-23 21:27:27,657] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:27:27,686] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:27:27,752] {logging_mixin.py:115} INFO - [2023-03-23 21:27:27,752] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:27:27,770] {logging_mixin.py:115} INFO - [2023-03-23 21:27:27,770] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:27:27,784] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.137 seconds
+[2023-03-23 21:27:58,012] {processor.py:153} INFO - Started process (PID=6845) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:27:58,015] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:27:58,018] {logging_mixin.py:115} INFO - [2023-03-23 21:27:58,017] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:27:58,062] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:27:58,152] {logging_mixin.py:115} INFO - [2023-03-23 21:27:58,152] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:27:58,189] {logging_mixin.py:115} INFO - [2023-03-23 21:27:58,189] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:27:58,209] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.207 seconds
+[2023-03-23 21:28:28,349] {processor.py:153} INFO - Started process (PID=6850) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:28:28,356] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:28:28,367] {logging_mixin.py:115} INFO - [2023-03-23 21:28:28,366] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:28:28,413] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:28:28,488] {logging_mixin.py:115} INFO - [2023-03-23 21:28:28,488] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:28:28,520] {logging_mixin.py:115} INFO - [2023-03-23 21:28:28,520] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:28:28,532] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.199 seconds
+[2023-03-23 21:28:58,681] {processor.py:153} INFO - Started process (PID=6855) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:28:58,684] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:28:58,698] {logging_mixin.py:115} INFO - [2023-03-23 21:28:58,698] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:28:58,725] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:28:58,786] {logging_mixin.py:115} INFO - [2023-03-23 21:28:58,786] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:28:58,817] {logging_mixin.py:115} INFO - [2023-03-23 21:28:58,817] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:28:58,836] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.167 seconds
+[2023-03-23 21:29:29,099] {processor.py:153} INFO - Started process (PID=6860) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:29:29,105] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:29:29,109] {logging_mixin.py:115} INFO - [2023-03-23 21:29:29,108] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:29:29,149] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:29:29,267] {logging_mixin.py:115} INFO - [2023-03-23 21:29:29,267] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:29:29,349] {logging_mixin.py:115} INFO - [2023-03-23 21:29:29,349] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:29:29,369] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.288 seconds
+[2023-03-23 21:29:59,643] {processor.py:153} INFO - Started process (PID=6865) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:29:59,646] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:29:59,667] {logging_mixin.py:115} INFO - [2023-03-23 21:29:59,666] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:29:59,703] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:29:59,772] {logging_mixin.py:115} INFO - [2023-03-23 21:29:59,771] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:29:59,811] {logging_mixin.py:115} INFO - [2023-03-23 21:29:59,811] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:29:59,827] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.194 seconds
+[2023-03-23 21:30:30,006] {processor.py:153} INFO - Started process (PID=6870) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:30:30,008] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:30:30,011] {logging_mixin.py:115} INFO - [2023-03-23 21:30:30,010] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:30:30,048] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:30:30,128] {logging_mixin.py:115} INFO - [2023-03-23 21:30:30,127] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:30:30,162] {logging_mixin.py:115} INFO - [2023-03-23 21:30:30,162] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:30:30,177] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.186 seconds
+[2023-03-23 21:31:00,451] {processor.py:153} INFO - Started process (PID=6875) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:31:00,456] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:31:00,461] {logging_mixin.py:115} INFO - [2023-03-23 21:31:00,460] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:31:00,515] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:31:00,641] {logging_mixin.py:115} INFO - [2023-03-23 21:31:00,641] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:31:00,694] {logging_mixin.py:115} INFO - [2023-03-23 21:31:00,694] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:31:00,711] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.280 seconds
+[2023-03-23 21:31:31,094] {processor.py:153} INFO - Started process (PID=6880) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:31:31,102] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:31:31,106] {logging_mixin.py:115} INFO - [2023-03-23 21:31:31,105] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:31:31,154] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:31:31,263] {logging_mixin.py:115} INFO - [2023-03-23 21:31:31,263] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:31:31,325] {logging_mixin.py:115} INFO - [2023-03-23 21:31:31,325] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:31:31,350] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.285 seconds
+[2023-03-23 21:32:01,666] {processor.py:153} INFO - Started process (PID=6885) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:32:01,669] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:32:01,672] {logging_mixin.py:115} INFO - [2023-03-23 21:32:01,672] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:32:01,708] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:32:01,768] {logging_mixin.py:115} INFO - [2023-03-23 21:32:01,768] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:32:01,810] {logging_mixin.py:115} INFO - [2023-03-23 21:32:01,809] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:32:01,822] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.178 seconds
+[2023-03-23 21:32:31,935] {processor.py:153} INFO - Started process (PID=6890) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:32:31,938] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:32:31,943] {logging_mixin.py:115} INFO - [2023-03-23 21:32:31,942] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:32:31,971] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:32:32,048] {logging_mixin.py:115} INFO - [2023-03-23 21:32:32,048] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:32:32,080] {logging_mixin.py:115} INFO - [2023-03-23 21:32:32,080] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:32:32,100] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.179 seconds
+[2023-03-23 21:33:02,401] {processor.py:153} INFO - Started process (PID=6895) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:33:02,403] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:33:02,405] {logging_mixin.py:115} INFO - [2023-03-23 21:33:02,405] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:33:02,437] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:33:02,504] {logging_mixin.py:115} INFO - [2023-03-23 21:33:02,504] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:33:02,535] {logging_mixin.py:115} INFO - [2023-03-23 21:33:02,534] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:33:02,546] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.158 seconds
+[2023-03-23 21:33:32,706] {processor.py:153} INFO - Started process (PID=6900) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:33:32,709] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:33:32,711] {logging_mixin.py:115} INFO - [2023-03-23 21:33:32,711] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:33:32,755] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:33:32,829] {logging_mixin.py:115} INFO - [2023-03-23 21:33:32,828] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:33:32,866] {logging_mixin.py:115} INFO - [2023-03-23 21:33:32,866] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:33:32,891] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.193 seconds
+[2023-03-23 21:34:03,038] {processor.py:153} INFO - Started process (PID=6905) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:34:03,041] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:34:03,044] {logging_mixin.py:115} INFO - [2023-03-23 21:34:03,044] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:34:03,092] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:34:03,169] {logging_mixin.py:115} INFO - [2023-03-23 21:34:03,169] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:34:03,209] {logging_mixin.py:115} INFO - [2023-03-23 21:34:03,209] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:34:03,223] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.196 seconds
+[2023-03-23 21:34:33,479] {processor.py:153} INFO - Started process (PID=6910) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:34:33,483] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:34:33,487] {logging_mixin.py:115} INFO - [2023-03-23 21:34:33,486] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:34:33,530] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:34:33,630] {logging_mixin.py:115} INFO - [2023-03-23 21:34:33,630] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:34:33,667] {logging_mixin.py:115} INFO - [2023-03-23 21:34:33,667] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:34:33,681] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.211 seconds
+[2023-03-23 21:35:03,885] {processor.py:153} INFO - Started process (PID=6915) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:35:03,887] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:35:03,892] {logging_mixin.py:115} INFO - [2023-03-23 21:35:03,891] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:35:03,920] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:35:03,968] {logging_mixin.py:115} INFO - [2023-03-23 21:35:03,967] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:35:03,995] {logging_mixin.py:115} INFO - [2023-03-23 21:35:03,995] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:35:04,010] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.130 seconds
+[2023-03-23 21:35:34,277] {processor.py:153} INFO - Started process (PID=6920) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:35:34,281] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:35:34,287] {logging_mixin.py:115} INFO - [2023-03-23 21:35:34,287] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:35:34,348] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:35:34,422] {logging_mixin.py:115} INFO - [2023-03-23 21:35:34,421] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:35:34,469] {logging_mixin.py:115} INFO - [2023-03-23 21:35:34,468] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:35:34,484] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.220 seconds
+[2023-03-23 21:42:06,497] {processor.py:153} INFO - Started process (PID=6925) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:42:06,503] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:42:06,507] {logging_mixin.py:115} INFO - [2023-03-23 21:42:06,507] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:42:06,641] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:42:06,774] {logging_mixin.py:115} INFO - [2023-03-23 21:42:06,773] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:42:06,825] {logging_mixin.py:115} INFO - [2023-03-23 21:42:06,824] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:42:06,881] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.399 seconds
+[2023-03-23 21:44:11,951] {processor.py:153} INFO - Started process (PID=6932) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:44:11,954] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:44:11,957] {logging_mixin.py:115} INFO - [2023-03-23 21:44:11,957] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:44:12,008] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:44:12,079] {logging_mixin.py:115} INFO - [2023-03-23 21:44:12,079] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:44:12,121] {logging_mixin.py:115} INFO - [2023-03-23 21:44:12,121] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:44:12,149] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.202 seconds
+[2023-03-23 21:45:55,473] {processor.py:153} INFO - Started process (PID=6941) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:45:55,480] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:45:55,484] {logging_mixin.py:115} INFO - [2023-03-23 21:45:55,483] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:45:55,538] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:45:55,677] {logging_mixin.py:115} INFO - [2023-03-23 21:45:55,677] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:45:55,742] {logging_mixin.py:115} INFO - [2023-03-23 21:45:55,741] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:45:55,775] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.311 seconds
+[2023-03-23 21:46:26,178] {processor.py:153} INFO - Started process (PID=6946) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:46:26,182] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:46:26,186] {logging_mixin.py:115} INFO - [2023-03-23 21:46:26,186] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:46:26,247] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:46:26,401] {logging_mixin.py:115} INFO - [2023-03-23 21:46:26,401] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:46:26,482] {logging_mixin.py:115} INFO - [2023-03-23 21:46:26,482] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:46:26,500] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.353 seconds
+[2023-03-23 21:46:56,843] {processor.py:153} INFO - Started process (PID=6951) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:46:56,848] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 21:46:56,853] {logging_mixin.py:115} INFO - [2023-03-23 21:46:56,852] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:46:56,929] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 21:46:57,039] {logging_mixin.py:115} INFO - [2023-03-23 21:46:57,038] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 21:46:57,143] {logging_mixin.py:115} INFO - [2023-03-23 21:46:57,143] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 21:46:57,154] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.321 seconds
+[2023-03-23 22:22:00,387] {processor.py:153} INFO - Started process (PID=6957) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 22:22:00,392] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 22:22:00,396] {logging_mixin.py:115} INFO - [2023-03-23 22:22:00,396] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 22:22:00,466] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 22:22:00,541] {logging_mixin.py:115} INFO - [2023-03-23 22:22:00,541] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 22:22:00,595] {logging_mixin.py:115} INFO - [2023-03-23 22:22:00,595] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 22:22:00,613] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.232 seconds
+[2023-03-23 23:27:27,877] {processor.py:153} INFO - Started process (PID=6965) to work on /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 23:27:27,891] {processor.py:641} INFO - Processing file /opt/airflow/dags/rightmove_extraction_dag.py for tasks to queue
+[2023-03-23 23:27:27,895] {logging_mixin.py:115} INFO - [2023-03-23 23:27:27,895] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 23:27:27,933] {processor.py:651} INFO - DAG(s) dict_keys(['rightmove_extraction_dag']) retrieved from /opt/airflow/dags/rightmove_extraction_dag.py
+[2023-03-23 23:27:28,026] {logging_mixin.py:115} INFO - [2023-03-23 23:27:28,026] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-03-23 23:27:28,099] {logging_mixin.py:115} INFO - [2023-03-23 23:27:28,098] {dag.py:2915} INFO - Setting next_dagrun for rightmove_extraction_dag to 2023-02-09T00:00:00+00:00, run_after=2023-02-10T00:00:00+00:00
+[2023-03-23 23:27:28,114] {processor.py:161} INFO - Processing /opt/airflow/dags/rightmove_extraction_dag.py took 0.244 seconds
