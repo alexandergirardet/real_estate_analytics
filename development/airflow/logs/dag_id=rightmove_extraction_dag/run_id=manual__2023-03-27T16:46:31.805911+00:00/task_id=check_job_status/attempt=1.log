@@ -1,0 +1,32 @@
+[2023-03-27 16:46:35,289] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.check_job_status manual__2023-03-27T16:46:31.805911+00:00 [queued]>
+[2023-03-27 16:46:35,295] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.check_job_status manual__2023-03-27T16:46:31.805911+00:00 [queued]>
+[2023-03-27 16:46:35,297] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 16:46:35,298] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-03-27 16:46:35,299] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 16:46:35,306] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): check_job_status> on 2023-03-27 16:46:31.805911+00:00
+[2023-03-27 16:46:35,310] {standard_task_runner.py:52} INFO - Started process 2215 to run task
+[2023-03-27 16:46:35,314] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'rightmove_extraction_dag', 'check_job_status', 'manual__2023-03-27T16:46:31.805911+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/rightmove_extraction_dag.py', '--cfg-path', '/tmp/tmpekp54kz3', '--error-file', '/tmp/tmpbnc19iv9']
+[2023-03-27 16:46:35,316] {standard_task_runner.py:80} INFO - Job 124: Subtask check_job_status
+[2023-03-27 16:46:35,358] {task_command.py:369} INFO - Running <TaskInstance: rightmove_extraction_dag.check_job_status manual__2023-03-27T16:46:31.805911+00:00 [running]> on host 6614738016e4
+[2023-03-27 16:46:35,402] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alex
+AIRFLOW_CTX_DAG_ID=rightmove_extraction_dag
+AIRFLOW_CTX_TASK_ID=check_job_status
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T16:46:31.805911+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-27T16:46:31.805911+00:00
+[2023-03-27 16:46:35,414] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/rightmove_extraction_dag.py", line 23, in check_job_status
+    if current_job_id:
+UnboundLocalError: local variable 'current_job_id' referenced before assignment
+[2023-03-27 16:46:35,425] {taskinstance.py:1395} INFO - Marking task as UP_FOR_RETRY. dag_id=rightmove_extraction_dag, task_id=check_job_status, execution_date=20230327T164631, start_date=20230327T164635, end_date=20230327T164635
+[2023-03-27 16:46:35,434] {standard_task_runner.py:92} ERROR - Failed to execute job 124 for task check_job_status (local variable 'current_job_id' referenced before assignment; 2215)
+[2023-03-27 16:46:35,447] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-03-27 16:46:35,476] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

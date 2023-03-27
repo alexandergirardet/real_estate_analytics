@@ -5,6 +5,9 @@ USER root
 # Copy requirements files
 COPY requirements.txt /requirements.txt
 
+# Install app for transformation
+COPY app /app
+
 # Install Airflow requirements
 USER airflow
 RUN pip install --user --upgrade pip

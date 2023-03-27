@@ -12,4 +12,5 @@ access_token.txt
 
 __pycache__
 
+# Ignore personal keys
 .keys

@@ -1,20 +1,15 @@
 import json
-import datetime
-import logging
-import uuid
+# import logging
 
 from transformer import ParquetTransformer
 
 from google.cloud import storage
 
-from dotenv import load_dotenv
-
 import pandas as pd
 
-logger = logging.getLogger(__name__)
-from io import BytesIO
+# logger = logging.getLogger(__name__)
 
-GCP_CREDS_PATH = "../keys/gcp-key.json"
+GCP_CREDS_PATH = "../.keys/gcp_key.json"
 
 class SilverProcessor:
 

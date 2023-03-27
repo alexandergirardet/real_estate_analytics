@@ -1,0 +1,1026 @@
+2023-03-27 16:33:54 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: real_estate_extraction)
+2023-03-27 16:33:54 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.2 (default, Feb 28 2021, 17:03:44) - [GCC 10.2.1 20210110], pyOpenSSL 23.1.0 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.1, Platform Linux-5.15.49-linuxkit-aarch64-with-glibc2.31
+2023-03-27 16:33:54 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'real_estate_extraction',
+ 'LOG_FILE': '/var/lib/scrapyd/logs/real_estate_extraction/rightmove/27dd2a70ccbd11eda6b40242ac180002.log',
+ 'NEWSPIDER_MODULE': 'real_estate_extraction.spiders',
+ 'SPIDER_MODULES': ['real_estate_extraction.spiders']}
+2023-03-27 16:33:54 [py.warnings] WARNING: /usr/local/lib/python3.9/dist-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2023-03-27 16:33:54 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2023-03-27 16:33:54 [scrapy.extensions.telnet] INFO: Telnet Password: ba909893edadb350
+2023-03-27 16:33:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-27 16:33:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-27 16:33:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-27 16:33:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['real_estate_extraction.pipelines.RealEstateExtractionPipeline']
+2023-03-27 16:33:54 [scrapy.core.engine] INFO: Spider opened
+2023-03-27 16:33:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-27 16:33:54 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E2&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.rightmove.co.uk/properties/132850508> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E3&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E5&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E4&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E5&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E5&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E5&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E1&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132223094> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132223094>
+1
+2023-03-27 16:33:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132881216> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132619193> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132881216>
+2
+2023-03-27 16:33:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132619193>
+3
+2023-03-27 16:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132880817> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131134463> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132880817>
+4
+2023-03-27 16:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131134463>
+5
+2023-03-27 16:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132887108> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132922388> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896093> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132887108>
+6
+2023-03-27 16:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132922388>
+7
+2023-03-27 16:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896093>
+8
+2023-03-27 16:33:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132520730> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896090> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132520730>
+9
+2023-03-27 16:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896090>
+10
+2023-03-27 16:33:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896072> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896072>
+11
+2023-03-27 16:33:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896084> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132420518> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:33:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896084>
+12
+2023-03-27 16:34:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132420518>
+13
+2023-03-27 16:34:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896087> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896069> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896087>
+14
+2023-03-27 16:34:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896069>
+15
+2023-03-27 16:34:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132939944> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132388100> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132115064> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132934124> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132939944>
+16
+2023-03-27 16:34:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132388100>
+17
+2023-03-27 16:34:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132115064>
+18
+2023-03-27 16:34:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132934124>
+19
+2023-03-27 16:34:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132909728> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132910130> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132909728>
+20
+2023-03-27 16:34:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132910130>
+21
+2023-03-27 16:34:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132910127> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132910127>
+22
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132910145> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132910133> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132910145>
+23
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132910154> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132910133>
+24
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132915527> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132910154>
+25
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132915527>
+26
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132910142> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132915533> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132915539> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132918884> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132910142>
+27
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132915533>
+28
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132915539>
+29
+2023-03-27 16:34:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132918884>
+30
+2023-03-27 16:34:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132659609> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132929297> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132659609>
+31
+2023-03-27 16:34:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132929297>
+32
+2023-03-27 16:34:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132934346> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132934346>
+33
+2023-03-27 16:34:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/129812885> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132933008> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132931811> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/129812885>
+34
+2023-03-27 16:34:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132933008>
+35
+2023-03-27 16:34:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132931811>
+36
+2023-03-27 16:34:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132934271> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132934271>
+37
+2023-03-27 16:34:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896066> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896066>
+38
+2023-03-27 16:34:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132939941> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132939941>
+39
+2023-03-27 16:34:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132939938> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132939938>
+40
+2023-03-27 16:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132954737> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132954737>
+41
+2023-03-27 16:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132952940> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132952940>
+42
+2023-03-27 16:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132961244> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132966056> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132961244>
+43
+2023-03-27 16:34:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132966056>
+44
+2023-03-27 16:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132064436> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132064436>
+45
+2023-03-27 16:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132966284> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132966284>
+46
+2023-03-27 16:34:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132966167> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132966362> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132966167>
+47
+2023-03-27 16:34:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132037073> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132966362>
+48
+2023-03-27 16:34:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132037073>
+49
+2023-03-27 16:34:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132967256> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132966608> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:06 [urllib3.util.retry] DEBUG: Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2023-03-27 16:34:06 [google.auth.transport.requests] DEBUG: Making request: POST https://oauth2.googleapis.com/token
+2023-03-27 16:34:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-03-27 16:34:07 [urllib3.connectionpool] DEBUG: https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-03-27 16:34:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): storage.googleapis.com:443
+2023-03-27 16:34:07 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "GET /storage/v1/b/rightmove_storage_dev?projection=noAcl&prettyPrint=false HTTP/1.1" 200 597
+2023-03-27 16:34:07 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "POST /upload/storage/v1/b/rightmove_storage_dev/o?uploadType=multipart HTTP/1.1" 200 983
+2023-03-27 16:34:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132967256>
+0
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132968273> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132967589> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132966608>
+1
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132728156> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132967727> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132988355> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132983249> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896081> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132817679> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132968273>
+2
+2023-03-27 16:34:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132967589>
+3
+2023-03-27 16:34:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132728156>
+4
+2023-03-27 16:34:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132967727>
+5
+2023-03-27 16:34:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132988355>
+6
+2023-03-27 16:34:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132983249>
+7
+2023-03-27 16:34:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896081>
+8
+2023-03-27 16:34:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132817679>
+9
+2023-03-27 16:34:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132870683> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132824612> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132870683>
+10
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132824612>
+11
+2023-03-27 16:34:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132824615> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/78514493> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132824615>
+12
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/78514493>
+13
+2023-03-27 16:34:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/119701796> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/123251729> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/119701796>
+14
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/123251729>
+15
+2023-03-27 16:34:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/123831017> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/120172454> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/123831017>
+16
+2023-03-27 16:34:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/120172454>
+17
+2023-03-27 16:34:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/123251561> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/85576926> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/123251561>
+18
+2023-03-27 16:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/85576926>
+19
+2023-03-27 16:34:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/115833383> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132850505> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/115833383>
+20
+2023-03-27 16:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132850505>
+21
+2023-03-27 16:34:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132852812> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132852812>
+22
+2023-03-27 16:34:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132850820> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132850820>
+23
+2023-03-27 16:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132855914> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132856331> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132850829> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132855914>
+24
+2023-03-27 16:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132856331>
+25
+2023-03-27 16:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132850829>
+26
+2023-03-27 16:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132866612> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132202640> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132862232> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132866612>
+27
+2023-03-27 16:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132202640>
+28
+2023-03-27 16:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132862232>
+29
+2023-03-27 16:34:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132866615> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132866615>
+30
+2023-03-27 16:34:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/129969941> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/129969941>
+31
+2023-03-27 16:34:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/127580510> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/127580510>
+32
+2023-03-27 16:34:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/80400863> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132702281> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132717917> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/80400863>
+33
+2023-03-27 16:34:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132702281>
+34
+2023-03-27 16:34:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132717917>
+35
+2023-03-27 16:34:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132739772> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132739772>
+36
+2023-03-27 16:34:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132733928> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132654749> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131370095> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132733928>
+37
+2023-03-27 16:34:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132654749>
+38
+2023-03-27 16:34:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132741392> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131370095>
+39
+2023-03-27 16:34:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132741392>
+40
+2023-03-27 16:34:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132756728> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132756773> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132756728>
+41
+2023-03-27 16:34:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132769172> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132756773>
+42
+2023-03-27 16:34:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132769172>
+43
+2023-03-27 16:34:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132756761> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132769127> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132756761>
+44
+2023-03-27 16:34:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132757718> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132769127>
+45
+2023-03-27 16:34:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132757718>
+46
+2023-03-27 16:34:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132763169> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132779798> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132763169>
+47
+2023-03-27 16:34:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132779798>
+48
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132807020> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132802304> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132807020>
+49
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132781355> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "GET /storage/v1/b/rightmove_storage_dev?projection=noAcl&prettyPrint=false HTTP/1.1" 200 597
+2023-03-27 16:34:15 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "POST /upload/storage/v1/b/rightmove_storage_dev/o?uploadType=multipart HTTP/1.1" 200 983
+2023-03-27 16:34:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132802304>
+0
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132796838> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E7&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132807023> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132781355>
+1
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132814130> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132809024> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132850508> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132807017> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132796838>
+2
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E7&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132807023>
+3
+2023-03-27 16:34:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132814130>
+4
+2023-03-27 16:34:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132809024>
+5
+2023-03-27 16:34:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132850508>
+6
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E7&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E8&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E7&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E8&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E8&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E9&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E8&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132807017>
+7
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E9&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E10&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E11&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E10&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E10&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E9&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E9&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E10&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E11&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E11&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E11&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E12&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E12&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E12&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E12&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E13&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E13&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E13&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E13&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E14&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E14&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E14&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E14&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E15&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E15&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E15&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E15&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E16&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E16&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132896078> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131885141> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132896078>
+8
+2023-03-27 16:34:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131885141>
+9
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E17&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E16&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/128407463> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E16&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/128407463>
+10
+2023-03-27 16:34:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132557981> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132557981>
+11
+2023-03-27 16:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132080804> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132080804>
+12
+2023-03-27 16:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/111561506> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/111561506>
+13
+2023-03-27 16:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132801170> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132801170>
+14
+2023-03-27 16:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/130891007> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/130891007>
+15
+2023-03-27 16:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/111562682> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/81352686> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/111562682>
+16
+2023-03-27 16:34:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/81352686>
+17
+2023-03-27 16:34:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/111561503> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/111561503>
+18
+2023-03-27 16:34:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/111562691> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/111562691>
+19
+2023-03-27 16:34:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/130627022> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/130627022>
+20
+2023-03-27 16:34:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132300245> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132300245>
+21
+2023-03-27 16:34:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132525839> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132388400> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/81354327> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132525839>
+22
+2023-03-27 16:34:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132388400>
+23
+2023-03-27 16:34:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/81354327>
+24
+2023-03-27 16:34:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/81353316> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/81353316>
+25
+2023-03-27 16:34:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/116115083> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/116115083>
+26
+2023-03-27 16:34:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132528623> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132528623>
+27
+2023-03-27 16:34:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/128440805> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131330708> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/126852017> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/128440805>
+28
+2023-03-27 16:34:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132388061> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131330708>
+29
+2023-03-27 16:34:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/126852017>
+30
+2023-03-27 16:34:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132388061>
+31
+2023-03-27 16:34:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131957183> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131953403> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131957183>
+32
+2023-03-27 16:34:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131953403>
+33
+2023-03-27 16:34:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131457791> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131457791>
+34
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132324044> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132324044>
+35
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/86085519> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132980987> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/86085519>
+36
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E17&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132611579> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132353525> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132980987>
+37
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E17&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E17&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132611579>
+38
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E18&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E18&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132353525>
+39
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132525896> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E18&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132926009> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E18&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132525896>
+40
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E19&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E19&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E19&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E19&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132926009>
+41
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132828797> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E20&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E20&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E20&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E20&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E21&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E21&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E21&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E21&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132828797>
+42
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E22&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132000848> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E22&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E22&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E22&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E23&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E23&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132000848>
+43
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E23&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E24&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E24&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E24&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E23&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E24&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E25&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E25&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E25&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E25&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132798428> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E26&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E26&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E26&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132798428>
+44
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E26&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132998726> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132998726>
+45
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E27&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E27&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132226433> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132852032> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132890687> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132226433>
+46
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132910850> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132779042> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132852032>
+47
+2023-03-27 16:34:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132890687>
+48
+2023-03-27 16:34:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132910850>
+49
+2023-03-27 16:34:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132698756> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:24 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "GET /storage/v1/b/rightmove_storage_dev?projection=noAcl&prettyPrint=false HTTP/1.1" 200 597
+2023-03-27 16:34:25 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "POST /upload/storage/v1/b/rightmove_storage_dev/o?uploadType=multipart HTTP/1.1" 200 983
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132779042>
+0
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132698756>
+1
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132692960> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132692960>
+2
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/128929469> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/128929469>
+3
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132685922> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/128450681> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132696395> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/129844433> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132685922>
+4
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/128450681>
+5
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132696395>
+6
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131829656> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/129844433>
+7
+2023-03-27 16:34:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131748329> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131829656>
+8
+2023-03-27 16:34:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131748329>
+9
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E27&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E27&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131797685> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132449444> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131797685>
+10
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132654755> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E28&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132449444>
+11
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E28&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132302945> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132654755>
+12
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E28&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131313962> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132292568> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E29&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132229481> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E29&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132302945>
+13
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E28&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E29&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E30&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131313962>
+14
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E29&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E30&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E30&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132292568>
+15
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E30&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E31&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132229481>
+16
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E31&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E31&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E31&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E32&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E32&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E32&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E32&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E33&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E33&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E33&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E33&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6066&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6066&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6066&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E6066&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E34&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E34&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E34&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E34&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E35&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E35&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132531803> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E35&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E35&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E36&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E36&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E36&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132531803>
+17
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E36&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E37&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E37&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E37&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E37&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=75&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E38&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=25&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E38&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=0&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/api/_search?locationIdentifier=OUTCODE%5E38&numberOfPropertiesPerPage=24&radius=10.0&sortType=6&index=50&includeLetAgreed=false&viewType=LIST&channel=RENT&areaSizeUnit=sqft&currencyCode=GBP&isFetching=false> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132180164> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132992123> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132180164>
+18
+2023-03-27 16:34:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132992123>
+19
+2023-03-27 16:34:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132990230> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132990230>
+20
+2023-03-27 16:34:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132988244> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132988244>
+21
+2023-03-27 16:34:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132991166> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132582065> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132991166>
+22
+2023-03-27 16:34:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132513821> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132582065>
+23
+2023-03-27 16:34:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132513821>
+24
+2023-03-27 16:34:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132793169> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132984437> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132793169>
+25
+2023-03-27 16:34:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132984437>
+26
+2023-03-27 16:34:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132985931> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132990290> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132985931>
+27
+2023-03-27 16:34:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132990290>
+28
+2023-03-27 16:34:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/55843371> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/55843371>
+29
+2023-03-27 16:34:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132986381> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132986381>
+30
+2023-03-27 16:34:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132983174> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132983174>
+31
+2023-03-27 16:34:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132991388> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132991388>
+32
+2023-03-27 16:34:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132987278> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132987278>
+33
+2023-03-27 16:34:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132987881> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132987881>
+34
+2023-03-27 16:34:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132345362> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132345362>
+35
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132795674> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132795674>
+36
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132791456> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132976145> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/127584596> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132825209> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132791456>
+37
+2023-03-27 16:34:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132976145>
+38
+2023-03-27 16:34:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/127584596>
+39
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132356843> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132825209>
+40
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132524228> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132914801> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132356843>
+41
+2023-03-27 16:34:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132524228>
+42
+2023-03-27 16:34:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132914801>
+43
+2023-03-27 16:34:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132976976> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132976976>
+44
+2023-03-27 16:34:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132977189> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132977189>
+45
+2023-03-27 16:34:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132977939> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132977939>
+46
+2023-03-27 16:34:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/37436183> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/37436183>
+47
+2023-03-27 16:34:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132977603> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132990950> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132977603>
+48
+2023-03-27 16:34:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132990950>
+49
+2023-03-27 16:34:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132994505> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132921113> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:37 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "GET /storage/v1/b/rightmove_storage_dev?projection=noAcl&prettyPrint=false HTTP/1.1" 200 597
+2023-03-27 16:34:37 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "POST /upload/storage/v1/b/rightmove_storage_dev/o?uploadType=multipart HTTP/1.1" 200 983
+2023-03-27 16:34:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132994505>
+0
+2023-03-27 16:34:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132998522> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132977957> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132921113>
+1
+2023-03-27 16:34:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132986006> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132986681> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132986792> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132998522>
+2
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132977957>
+3
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132986006>
+4
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132986681>
+5
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132986792>
+6
+2023-03-27 16:34:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/86012502> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/86012502>
+7
+2023-03-27 16:34:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132111494> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132111494>
+8
+2023-03-27 16:34:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132988001> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132988001>
+9
+2023-03-27 16:34:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132988961> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132988961>
+10
+2023-03-27 16:34:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132991085> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132560186> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132051245> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132991085>
+11
+2023-03-27 16:34:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132560186>
+12
+2023-03-27 16:34:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132051245>
+13
+2023-03-27 16:34:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132992627> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132990140> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132992627>
+14
+2023-03-27 16:34:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132990140>
+15
+2023-03-27 16:34:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132426863> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132426863>
+16
+2023-03-27 16:34:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132993077> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132993077>
+17
+2023-03-27 16:34:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132990608> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132989732> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132990608>
+18
+2023-03-27 16:34:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132992819> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132989732>
+19
+2023-03-27 16:34:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132991355> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132991820> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132992819>
+20
+2023-03-27 16:34:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132991355>
+21
+2023-03-27 16:34:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132991820>
+22
+2023-03-27 16:34:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132991904> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132991904>
+23
+2023-03-27 16:34:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132993740> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132994673> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132993740>
+24
+2023-03-27 16:34:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132994673>
+25
+2023-03-27 16:34:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132995195> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132996593> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132995195>
+26
+2023-03-27 16:34:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132996593>
+27
+2023-03-27 16:34:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132834290> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132834290>
+28
+2023-03-27 16:34:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132997790> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132997790>
+29
+2023-03-27 16:34:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132998492> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/102018572> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132287513> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132998492>
+30
+2023-03-27 16:34:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132892310> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/102018572>
+31
+2023-03-27 16:34:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132287513>
+32
+2023-03-27 16:34:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/63859358> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132892310>
+33
+2023-03-27 16:34:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/63859358>
+34
+2023-03-27 16:34:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132983147> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132828695> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132983147>
+35
+2023-03-27 16:34:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132828695>
+36
+2023-03-27 16:34:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132989084> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132987362> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132989084>
+37
+2023-03-27 16:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132987494> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132987362>
+38
+2023-03-27 16:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132992954> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132987494>
+39
+2023-03-27 16:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132922427> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132512081> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132992954>
+40
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132922427>
+41
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132512081>
+42
+2023-03-27 16:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132993848> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/131828507> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132993848>
+43
+2023-03-27 16:34:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/131828507>
+44
+2023-03-27 16:34:45 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2023-03-27 16:34:45 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132998468> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132998468>
+45
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132994841> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132206165> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132994841>
+46
+2023-03-27 16:34:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132206165>
+47
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132998507> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132023633> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132978260> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132998507>
+48
+2023-03-27 16:34:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132023633>
+49
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132795806> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132798788> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:46 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "GET /storage/v1/b/rightmove_storage_dev?projection=noAcl&prettyPrint=false HTTP/1.1" 200 597
+2023-03-27 16:34:47 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "POST /upload/storage/v1/b/rightmove_storage_dev/o?uploadType=multipart HTTP/1.1" 200 983
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132978260>
+0
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132795806>
+1
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132798788>
+2
+2023-03-27 16:34:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132979220> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132980795> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132979220>
+3
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132980795>
+4
+2023-03-27 16:34:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132980654> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132030479> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132980654>
+5
+2023-03-27 16:34:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132336101> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132030479>
+6
+2023-03-27 16:34:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132336101>
+7
+2023-03-27 16:34:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132981179> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132981545> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/132980981> (referer: https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=REGION%5E87490&index=24&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=)
+2023-03-27 16:34:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132981179>
+8
+2023-03-27 16:34:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132981545>
+9
+2023-03-27 16:34:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/132980981>
+10
+2023-03-27 16:34:48 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "GET /storage/v1/b/rightmove_storage_dev?projection=noAcl&prettyPrint=false HTTP/1.1" 200 597
+2023-03-27 16:34:48 [urllib3.connectionpool] DEBUG: https://storage.googleapis.com:443 "POST /upload/storage/v1/b/rightmove_storage_dev/o?uploadType=multipart HTTP/1.1" 200 982
+2023-03-27 16:34:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 501966,
+ 'downloader/request_count': 415,
+ 'downloader/request_method_count/GET': 415,
+ 'downloader/response_bytes': 79105426,
+ 'downloader/response_count': 415,
+ 'downloader/response_status_count/200': 415,
+ 'dupefilter/filtered': 2080,
+ 'elapsed_time_seconds': 53.519687,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2023, 3, 27, 16, 34, 48, 360660),
+ 'httpcompression/response_bytes': 16591818,
+ 'httpcompression/response_count': 155,
+ 'item_scraped_count': 260,
+ 'log_count/DEBUG': 694,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 70750208,
+ 'memusage/startup': 70750208,
+ 'request_depth_max': 1,
+ 'response_received_count': 415,
+ 'scheduler/dequeued': 415,
+ 'scheduler/dequeued/memory': 415,
+ 'scheduler/enqueued': 499,
+ 'scheduler/enqueued/memory': 499,
+ 'start_time': datetime.datetime(2023, 3, 27, 16, 33, 54, 840973)}
+2023-03-27 16:34:48 [scrapy.core.engine] INFO: Spider closed (shutdown)
