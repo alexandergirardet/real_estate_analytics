@@ -88,11 +88,9 @@ class RightmoveSpider(scrapy.Spider):
             outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
         return outcodes
     
-    # def get_outcodes(self) -> list:
-    #     csv_file_path = pkgutil.get_data('real_estate_extraction', 'data/rightmove_outcodes.csv')
-    #     with open(csv_file_path) as f:
-    #         reader = csv.reader(f)
-    #         outcodes = list(reader)
-    #         outcodes = outcodes[1:]
-    #         outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
-    #     return outcodes
+        # with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/extraction_data/rightmove_outcodes.csv', 'r') as f:
+        #     reader = csv.reader(f)
+        #     outcodes = list(reader)
+        #     outcodes = outcodes[1:]
+        #     outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
+        # return outcodes

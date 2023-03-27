@@ -10,7 +10,7 @@ from itemadapter import ItemAdapter
 import string
 import json
 import uuid
-import requests
+import datetime
 
 from google.cloud import storage
 from google.oauth2 import service_account
@@ -27,13 +27,32 @@ class RealEstateExtractionPipeline:
 
         service_account_file = "/.keys/gcp_key.json"
 
+        # service_account_file = "/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/.keys/gcp_key.json"
+
         credentials = service_account.Credentials.from_service_account_file(service_account_file)
         self.client = storage.Client(credentials=credentials)
+
+        import psycopg2
+
+        self.conn = psycopg2.connect(
+                    host="localhost",
+                    database="rightmove_development",
+                    port=5433) # Port 5432 is already in use by the airflow container
+
+        self.cursor = self.conn.cursor()
+
+        now = datetime.datetime.utcnow()
+
+        # The now instance is denominated in UTC 0 time for commonality over several time zones
+
+        self.ymdhm = f"{now.year}-{now.month}-{now.day}-{now.hour}-{now.minute}"
+        self.now_timestamp = int(now.timestamp())
 
     def process_item(self, item, spider):
         ### Create a function that takes a string and removes all punctuation 
         summary = item['summary']
         feature_list = item['feature_list']
+        
 
         if summary:
             summary = self.remove_punctuation_except_commas(summary)
@@ -48,7 +67,7 @@ class RealEstateExtractionPipeline:
 
         print(len(self.items))
 
-        if len(self.items) >= 50:  # Batch size of file
+        if len(self.items) >= 5:  # Batch size of file
 
             self.send_items_to_bucket()
 
@@ -69,7 +88,8 @@ class RealEstateExtractionPipeline:
     def send_items_to_bucket(self):
         file_id = str(uuid.uuid4())
 
-        # data = '\n'.join(json.dumps(d) for d in self.items) This is to make json new line delimited
+        ids = [item["id"] for item in self.items]
+
         data = json.dumps(self.items)
 
         bucket = self.client.get_bucket(self.bucket_name)
@@ -77,9 +97,43 @@ class RealEstateExtractionPipeline:
 
         try:
             blob.upload_from_string(data, content_type="application/json")
+            self.send_bulk_ids(ids, file_id, self.now_timestamp)
             print("BUCKET SUCCESSFULLY UPLOADED DATA")
             self.items = []
             return True
         except Exception as e:
             print(f"BUCKET FAILED TO UPLOAD DATA: {e}")
             return False
+
+    def send_bulk_ids(self, id_list, file_id, now_timestamp):
+        """_summary_
+
+        Args:
+            id_list (_type_): _description_
+            file_id (_type_): _description_
+            now_timestamp (_type_): _description_
+
+        Returns:
+            int: _description_
+        """
+        tuples_to_insert = []
+
+        for prop_id in id_list:
+            prop_tuple = (prop_id, file_id, now_timestamp, self.ymdhm)
+            tuples_to_insert.append(prop_tuple)
+
+        tuple_string = str(tuples_to_insert)
+
+        sql_query = f"INSERT INTO rightmove_landing_zone(rightmove_id, GCS_file_id, timestamp_scraped, partition_date) VALUES {tuple_string[1:-1]}"
+
+        self.query_sql(sql_query, self.conn)
+
+    def query_sql(self, query, conn):
+
+        cursor = conn.cursor()
+        cursor.execute(query)
+
+        conn.commit()
+        conn.rollback()
+
+        print("Query successful")
