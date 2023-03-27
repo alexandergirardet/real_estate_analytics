@@ -1,0 +1,32 @@
+[2023-03-27 19:46:26,231] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.check_job_status manual__2023-03-27T19:46:20.190783+00:00 [queued]>
+[2023-03-27 19:46:26,237] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.check_job_status manual__2023-03-27T19:46:20.190783+00:00 [queued]>
+[2023-03-27 19:46:26,238] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 19:46:26,239] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-03-27 19:46:26,241] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27 19:46:26,248] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): check_job_status> on 2023-03-27 19:46:20.190783+00:00
+[2023-03-27 19:46:26,251] {standard_task_runner.py:52} INFO - Started process 1646 to run task
+[2023-03-27 19:46:26,255] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'rightmove_extraction_dag', 'check_job_status', 'manual__2023-03-27T19:46:20.190783+00:00', '--job-id', '138', '--raw', '--subdir', 'DAGS_FOLDER/rightmove_extraction_dag.py', '--cfg-path', '/tmp/tmpxzgv4s0n', '--error-file', '/tmp/tmppwea15ku']
+[2023-03-27 19:46:26,256] {standard_task_runner.py:80} INFO - Job 138: Subtask check_job_status
+[2023-03-27 19:46:26,301] {task_command.py:369} INFO - Running <TaskInstance: rightmove_extraction_dag.check_job_status manual__2023-03-27T19:46:20.190783+00:00 [running]> on host 6c19e51924f7
+[2023-03-27 19:46:26,345] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alex
+AIRFLOW_CTX_DAG_ID=rightmove_extraction_dag
+AIRFLOW_CTX_TASK_ID=check_job_status
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T19:46:20.190783+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-27T19:46:20.190783+00:00
+[2023-03-27 19:46:26,356] {logging_mixin.py:115} INFO - {'jobid': '0ee542e4ccd811edaeab0242ac180004'}
+[2023-03-27 19:46:26,358] {logging_mixin.py:115} INFO - Job has been received. Job ID: 0ee542e4ccd811edaeab0242ac180004
+[2023-03-27 19:46:26,373] {logging_mixin.py:115} INFO - Current job is 0ee542e4ccd811edaeab0242ac180004
+[2023-03-27 19:46:26,374] {logging_mixin.py:115} INFO - Job is pending
+[2023-03-27 19:46:26,375] {logging_mixin.py:115} INFO - Job is pending
+[2023-03-27 19:46:26,376] {logging_mixin.py:115} INFO - HTTP request sent at 19:46:26
+[2023-03-27 19:46:56,433] {logging_mixin.py:115} INFO - Current job is 0ee542e4ccd811edaeab0242ac180004
+[2023-03-27 19:46:56,437] {logging_mixin.py:115} INFO - Job is finished
+[2023-03-27 19:46:56,444] {logging_mixin.py:115} INFO - Job finished successfully
+[2023-03-27 19:46:56,446] {python.py:173} INFO - Done. Returned value was: None
+[2023-03-27 19:46:56,474] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=rightmove_extraction_dag, task_id=check_job_status, execution_date=20230327T194620, start_date=20230327T194626, end_date=20230327T194656
+[2023-03-27 19:46:56,508] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-27 19:46:56,538] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

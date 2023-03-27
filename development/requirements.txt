@@ -7,3 +7,4 @@ google-cloud-storage
 # Transformation App requirements
 pandas
 pyarrow
+apache-airflow[google]

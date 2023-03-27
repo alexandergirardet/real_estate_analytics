@@ -71,6 +71,7 @@ def check_job_status(**context):
 PROJECT_NAME = 'real_estate_extraction'
 SPIDER_NAME = 'rightmove'
 
+# Scrapy Jobs
 def shut_down_jobs(jobs_to_shutdown):
     count = 0
     for job_id in jobs_to_shutdown:
@@ -216,8 +217,10 @@ with DAG(
         provide_context=True,
     )
 
-task1 >> task2 >> task3 >> task4
+    task5 = BashOperator(
+        task_id='trigger_transformation',
+        bash_command='cd /app/transformation && python processor.py',
+        dag=dag
+)
 
-
-import requests
-import time
+task1 >> task2 >> task3 >> task4 >> task5

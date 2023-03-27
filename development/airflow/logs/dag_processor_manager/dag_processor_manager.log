@@ -19907,3 +19907,1591 @@ File Path                                        PID  Runtime      # DAGs    # E
 /opt/airflow/dags/rightmove_extraction.py        179  0.32s             0           0
 /opt/airflow/dags/rightmove_extraction_dag.py    178  0.42s             0           0
 ================================================================================
+[2023-03-27 17:15:18,948] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  1.87s           2023-03-27T17:14:49
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  1.95s           2023-03-27T17:14:49
+================================================================================
+[2023-03-27 17:15:49,161] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.78s           2023-03-27T17:15:20
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.94s           2023-03-27T17:15:20
+================================================================================
+[2023-03-27 17:16:19,489] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.35s           2023-03-27T17:15:51
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.40s           2023-03-27T17:15:51
+================================================================================
+[2023-03-27 17:16:50,439] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.34s           2023-03-27T17:16:22
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.39s           2023-03-27T17:16:22
+================================================================================
+[2023-03-27 17:17:20,828] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.32s           2023-03-27T17:16:52
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.38s           2023-03-27T17:16:52
+================================================================================
+[2023-03-27 17:40:32,667] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 17:40:32,730] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 17:40:48,348] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  1.12s           2023-03-27T17:40:34
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  1.22s           2023-03-27T17:40:34
+================================================================================
+[2023-03-27 17:43:38,963] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  1.00s           2023-03-27T17:43:23
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  1.09s           2023-03-27T17:43:23
+================================================================================
+[2023-03-27 18:15:32,433] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:15:32,524] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:15:48,526] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.72s           2023-03-27T18:15:33
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.76s           2023-03-27T18:15:33
+================================================================================
+[2023-03-27 18:24:20,139] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:24:20,254] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:24:36,076] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.60s           2023-03-27T18:24:20
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.63s           2023-03-27T18:24:20
+================================================================================
+[2023-03-27 18:25:06,369] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:24:51
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:24:51
+================================================================================
+[2023-03-27 18:25:36,733] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:25:21
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:25:21
+================================================================================
+[2023-03-27 18:26:07,043] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.16s           2023-03-27T18:25:52
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.17s           2023-03-27T18:25:52
+================================================================================
+[2023-03-27 18:26:37,358] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.32s           2023-03-27T18:26:22
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.36s           2023-03-27T18:26:22
+================================================================================
+[2023-03-27 18:27:07,879] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:26:53
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:26:53
+================================================================================
+[2023-03-27 18:27:38,319] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:27:23
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.26s           2023-03-27T18:27:23
+================================================================================
+[2023-03-27 18:28:08,697] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:27:53
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:27:53
+================================================================================
+[2023-03-27 18:28:39,002] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:28:24
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T18:28:24
+================================================================================
+[2023-03-27 18:29:09,455] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:28:54
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:28:54
+================================================================================
+[2023-03-27 18:29:20,543] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:29:20,619] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:29:39,857] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:29:24
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T18:29:24
+================================================================================
+[2023-03-27 18:30:10,294] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.27s           2023-03-27T18:29:55
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.33s           2023-03-27T18:29:55
+================================================================================
+[2023-03-27 18:30:40,778] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:30:25
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:30:25
+================================================================================
+[2023-03-27 18:31:11,216] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:30:56
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:30:56
+================================================================================
+[2023-03-27 18:31:41,708] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.22s           2023-03-27T18:31:26
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T18:31:26
+================================================================================
+[2023-03-27 18:32:12,389] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:31:57
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:31:57
+================================================================================
+[2023-03-27 18:32:42,706] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:32:27
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:32:27
+================================================================================
+[2023-03-27 18:33:13,433] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:32:58
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:32:58
+================================================================================
+[2023-03-27 18:33:43,903] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.19s           2023-03-27T18:33:28
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.22s           2023-03-27T18:33:28
+================================================================================
+[2023-03-27 18:34:14,365] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:33:59
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.26s           2023-03-27T18:33:59
+================================================================================
+[2023-03-27 18:34:21,433] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:34:21,500] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:34:44,767] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.27s           2023-03-27T18:34:29
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.32s           2023-03-27T18:34:29
+================================================================================
+[2023-03-27 18:35:15,228] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:35:00
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:35:00
+================================================================================
+[2023-03-27 18:35:45,769] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:35:30
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:35:30
+================================================================================
+[2023-03-27 18:36:16,027] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:36:01
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.26s           2023-03-27T18:36:01
+================================================================================
+[2023-03-27 18:36:46,419] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:36:31
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:36:31
+================================================================================
+[2023-03-27 18:37:16,710] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:37:01
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:37:01
+================================================================================
+[2023-03-27 18:37:47,056] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:37:32
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:37:32
+================================================================================
+[2023-03-27 18:38:17,520] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.27s           2023-03-27T18:38:02
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.15s           2023-03-27T18:38:02
+================================================================================
+[2023-03-27 18:38:47,795] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:38:32
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:38:32
+================================================================================
+[2023-03-27 18:39:18,218] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:39:03
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:39:03
+================================================================================
+[2023-03-27 18:39:21,438] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:39:21,513] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:39:48,796] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.17s           2023-03-27T18:39:33
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.20s           2023-03-27T18:39:33
+================================================================================
+[2023-03-27 18:40:19,182] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.21s           2023-03-27T18:40:04
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.23s           2023-03-27T18:40:04
+================================================================================
+[2023-03-27 18:40:49,631] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:40:34
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:40:34
+================================================================================
+[2023-03-27 18:41:20,084] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.20s           2023-03-27T18:41:04
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.25s           2023-03-27T18:41:04
+================================================================================
+[2023-03-27 18:41:50,402] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:41:35
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T18:41:35
+================================================================================
+[2023-03-27 18:42:20,768] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.18s           2023-03-27T18:42:05
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.20s           2023-03-27T18:42:05
+================================================================================
+[2023-03-27 18:42:51,119] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:42:36
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T18:42:36
+================================================================================
+[2023-03-27 18:43:21,413] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:43:06
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:43:06
+================================================================================
+[2023-03-27 18:43:51,937] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:43:36
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:43:36
+================================================================================
+[2023-03-27 18:44:22,217] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:44:22,286] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:44:22,311] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:44:07
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:44:07
+================================================================================
+[2023-03-27 18:44:52,843] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:44:37
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:44:37
+================================================================================
+[2023-03-27 18:45:23,323] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:45:08
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:45:08
+================================================================================
+[2023-03-27 18:45:53,583] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.21s           2023-03-27T18:45:38
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.24s           2023-03-27T18:45:38
+================================================================================
+[2023-03-27 18:46:24,076] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:46:09
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:46:09
+================================================================================
+[2023-03-27 18:46:54,512] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:46:39
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:46:39
+================================================================================
+[2023-03-27 18:47:24,867] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:47:09
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T18:47:09
+================================================================================
+[2023-03-27 18:47:55,277] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.20s           2023-03-27T18:47:40
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.23s           2023-03-27T18:47:40
+================================================================================
+[2023-03-27 18:48:25,529] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.19s           2023-03-27T18:48:10
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.21s           2023-03-27T18:48:10
+================================================================================
+[2023-03-27 18:48:55,948] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:48:41
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:48:41
+================================================================================
+[2023-03-27 18:49:22,381] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:49:22,404] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:49:26,451] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.19s           2023-03-27T18:49:11
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.23s           2023-03-27T18:49:11
+================================================================================
+[2023-03-27 18:49:56,698] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.15s           2023-03-27T18:49:41
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.15s           2023-03-27T18:49:41
+================================================================================
+[2023-03-27 18:50:27,260] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:50:12
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:50:12
+================================================================================
+[2023-03-27 18:50:57,627] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T18:50:42
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.32s           2023-03-27T18:50:42
+================================================================================
+[2023-03-27 18:51:28,157] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.20s           2023-03-27T18:51:13
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.25s           2023-03-27T18:51:13
+================================================================================
+[2023-03-27 18:51:58,634] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.18s           2023-03-27T18:51:43
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.20s           2023-03-27T18:51:43
+================================================================================
+[2023-03-27 18:52:28,973] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:52:14
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.25s           2023-03-27T18:52:14
+================================================================================
+[2023-03-27 18:52:59,622] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:52:44
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T18:52:44
+================================================================================
+[2023-03-27 18:53:30,012] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T18:53:15
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T18:53:15
+================================================================================
+[2023-03-27 18:54:00,553] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:53:45
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:53:45
+================================================================================
+[2023-03-27 18:54:22,802] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:54:22,849] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:54:30,958] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:54:15
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T18:54:15
+================================================================================
+[2023-03-27 18:55:01,345] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:54:46
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.32s           2023-03-27T18:54:46
+================================================================================
+[2023-03-27 18:55:31,868] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:55:16
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T18:55:16
+================================================================================
+[2023-03-27 18:56:02,179] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:55:47
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:55:47
+================================================================================
+[2023-03-27 18:56:32,594] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:56:17
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T18:56:17
+================================================================================
+[2023-03-27 18:57:03,048] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:56:48
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T18:56:48
+================================================================================
+[2023-03-27 18:57:33,535] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.28s           2023-03-27T18:57:18
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.33s           2023-03-27T18:57:18
+================================================================================
+[2023-03-27 18:58:04,064] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:57:49
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:57:49
+================================================================================
+[2023-03-27 18:58:34,445] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T18:58:19
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T18:58:19
+================================================================================
+[2023-03-27 18:59:05,193] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.29s           2023-03-27T18:58:50
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.34s           2023-03-27T18:58:50
+================================================================================
+[2023-03-27 18:59:23,396] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 18:59:23,454] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 18:59:35,573] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T18:59:20
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T18:59:20
+================================================================================
+[2023-03-27 19:00:05,857] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T18:59:51
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T18:59:51
+================================================================================
+[2023-03-27 19:00:36,350] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.28s           2023-03-27T19:00:21
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.34s           2023-03-27T19:00:21
+================================================================================
+[2023-03-27 19:01:06,796] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T19:00:51
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:00:51
+================================================================================
+[2023-03-27 19:01:37,085] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:01:22
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:01:22
+================================================================================
+[2023-03-27 19:02:07,534] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:01:52
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:01:52
+================================================================================
+[2023-03-27 19:02:38,099] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.17s           2023-03-27T19:02:23
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.19s           2023-03-27T19:02:23
+================================================================================
+[2023-03-27 19:03:08,398] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T19:02:53
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:02:53
+================================================================================
+[2023-03-27 19:03:39,142] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:03:24
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T19:03:24
+================================================================================
+[2023-03-27 19:04:09,470] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:03:54
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:03:54
+================================================================================
+[2023-03-27 19:04:23,566] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 19:04:23,624] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 19:04:40,135] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.28s           2023-03-27T19:04:25
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T19:04:25
+================================================================================
+[2023-03-27 19:05:10,477] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.22s           2023-03-27T19:04:55
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.26s           2023-03-27T19:04:55
+================================================================================
+[2023-03-27 19:05:40,831] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:05:25
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:05:25
+================================================================================
+[2023-03-27 19:06:11,122] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.17s           2023-03-27T19:05:56
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.20s           2023-03-27T19:05:56
+================================================================================
+[2023-03-27 19:06:41,705] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:06:26
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.33s           2023-03-27T19:06:26
+================================================================================
+[2023-03-27 19:07:12,010] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:06:57
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.25s           2023-03-27T19:06:57
+================================================================================
+[2023-03-27 19:07:42,431] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:07:27
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T19:07:27
+================================================================================
+[2023-03-27 19:08:12,863] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.17s           2023-03-27T19:07:57
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.20s           2023-03-27T19:07:57
+================================================================================
+[2023-03-27 19:08:43,140] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:08:28
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T19:08:28
+================================================================================
+[2023-03-27 19:09:13,557] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:08:58
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:08:58
+================================================================================
+[2023-03-27 19:09:23,622] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 19:09:23,682] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 19:09:43,986] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T19:09:29
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:09:29
+================================================================================
+[2023-03-27 19:10:14,496] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:09:59
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:09:59
+================================================================================
+[2023-03-27 19:10:44,770] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T19:10:29
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:10:29
+================================================================================
+[2023-03-27 19:11:15,222] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:11:00
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:11:00
+================================================================================
+[2023-03-27 19:11:45,694] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.25s           2023-03-27T19:11:30
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T19:11:30
+================================================================================
+[2023-03-27 19:12:16,166] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:12:01
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T19:12:01
+================================================================================
+[2023-03-27 19:12:46,584] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.27s           2023-03-27T19:12:31
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:12:31
+================================================================================
+[2023-03-27 19:13:17,080] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:13:02
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T19:13:02
+================================================================================
+[2023-03-27 19:13:47,453] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:13:32
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:13:32
+================================================================================
+[2023-03-27 19:14:17,762] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:14:02
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:14:02
+================================================================================
+[2023-03-27 19:14:23,816] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 19:14:23,881] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 19:14:48,132] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:14:33
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T19:14:33
+================================================================================
+[2023-03-27 19:15:18,511] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:15:03
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T19:15:03
+================================================================================
+[2023-03-27 19:15:49,006] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.24s           2023-03-27T19:15:33
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:15:33
+================================================================================
+[2023-03-27 19:16:19,329] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:16:04
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T19:16:04
+================================================================================
+[2023-03-27 19:16:49,831] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:16:34
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:16:34
+================================================================================
+[2023-03-27 19:33:53,581] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 19:33:53,643] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 19:38:37,025] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.72s           2023-03-27T19:33:54
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.72s           2023-03-27T19:33:54
+================================================================================
+[2023-03-27 19:38:54,020] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 19:38:54,107] {manager.py:687} INFO - There are 2 files in /opt/airflow/dags
+[2023-03-27 19:39:07,236] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.99s           2023-03-27T19:38:38
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  1.22s           2023-03-27T19:38:38
+================================================================================
+[2023-03-27 19:39:37,549] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.30s           2023-03-27T19:39:09
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.37s           2023-03-27T19:39:09
+================================================================================
+[2023-03-27 19:40:08,082] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.23s           2023-03-27T19:39:40
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.27s           2023-03-27T19:39:40
+================================================================================
+[2023-03-27 19:40:38,997] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.34s           2023-03-27T19:40:10
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.42s           2023-03-27T19:40:10
+================================================================================
+[2023-03-27 19:41:03,249] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:03,482] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:04,266] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:04,502] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:05,293] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:05,521] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:06,316] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:06,548] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:07,338] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:07,609] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:08,369] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:08,639] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:09,395] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:09,417] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:40:41
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.31s           2023-03-27T19:40:41
+================================================================================
+[2023-03-27 19:41:09,652] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:10,441] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:10,661] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:11,466] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:11,679] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:11,791] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:12,698] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:12,806] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:13,716] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:13,826] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:13,915] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:14,841] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:14,933] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:15,853] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:15,939] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:16,876] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:16,973] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:17,895] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:17,985] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:18,905] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:18,998] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:19,922] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:20,013] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:20,939] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:21,056] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:21,958] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:22,081] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:22,980] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:23,103] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:23,397] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:24,157] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:24,409] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:25,176] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:25,438] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:26,191] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:26,456] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:27,223] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:27,470] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:28,246] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:28,488] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:29,269] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:29,503] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:30,295] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:30,520] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:31,377] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:31,544] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:32,395] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:32,564] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:33,422] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:33,586] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:34,441] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:34,645] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:35,460] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:35,676] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:36,483] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:36,693] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:37,503] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:37,695] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:38,600] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:38,712] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:38,723] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:39,724] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:39,736] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           0           1  0.11s           2023-03-27T19:41:38
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:40:41
+================================================================================
+[2023-03-27 19:41:39,746] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:40,760] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:40,773] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:41,772] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:41,787] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:42,800] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:42,826] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:43,835] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:43,857] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:44,863] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:44,868] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:45,880] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:45,893] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:46,893] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:46,912] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:47,921] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:47,945] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:48,944] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:48,982] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:49,095] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:49,995] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:50,107] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:51,010] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:51,124] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:52,021] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:52,137] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:53,039] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:53,145] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:54,064] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:54,180] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:55,083] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:55,200] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:56,100] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:56,210] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:56,246] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:57,219] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:57,252] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:58,249] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:58,296] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:58,396] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:59,313] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:41:59,404] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:00,334] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:00,416] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:00,599] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:01,434] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:01,607] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:02,452] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:02,620] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:02,646] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:03,634] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:03,679] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:03,968] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:04,693] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:04,985] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:05,709] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:06,004] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:06,724] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:07,018] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:07,735] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:08,027] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:08,045] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:09,045] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:09,060] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:10,065] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:10,072] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:40:41
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:42:08
+================================================================================
+[2023-03-27 19:42:10,079] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:11,088] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:11,098] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:11,308] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:12,153] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:12,321] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:13,170] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:13,339] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:14,191] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:14,336] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:15,230] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:15,346] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:16,249] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:16,361] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:17,265] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:17,377] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:18,279] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:18,391] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:19,288] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:19,406] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:20,305] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:20,421] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:20,596] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:21,438] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:21,606] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:22,458] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:22,627] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:23,471] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:23,647] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:24,492] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:24,660] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:25,544] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:25,671] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:25,796] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:26,689] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:26,803] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:26,908] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:27,819] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:27,913] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:28,045] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:28,926] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:29,056] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:29,943] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:30,066] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:30,118] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:31,076] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:31,126] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:32,090] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:32,141] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:32,372] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:33,163] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:33,381] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:34,180] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:34,408] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:35,204] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:35,416] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:35,468] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:36,431] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:36,479] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:37,456] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:37,533] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:37,802] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:38,556] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:38,846] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:39,570] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:39,855] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:40,588] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:40,601] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:40:41
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:42:37
+================================================================================
+[2023-03-27 19:42:40,894] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:41,616] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:41,921] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:42,630] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:42,918] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:43,680] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:43,933] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:44,692] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:44,967] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:45,712] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:45,982] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:46,733] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:46,995] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:47,756] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:48,016] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:48,781] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:49,034] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:49,798] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:50,050] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:50,815] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:51,059] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:51,154] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:52,091] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:52,161] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:53,106] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:53,175] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:54,131] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:54,186] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:55,153] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:55,208] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:56,172] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:56,219] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:56,373] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:57,238] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:57,391] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:58,257] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:58,408] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:59,273] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:42:59,429] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:00,291] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:00,454] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:00,587] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:01,470] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:01,598] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:02,492] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:02,616] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:03,512] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:03,636] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:04,542] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:04,650] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:05,574] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:05,670] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:06,598] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:06,694] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:07,613] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:07,701] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:08,634] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:08,716] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:09,651] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:09,736] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:10,667] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:10,683] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:40:41
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T19:43:00
+================================================================================
+[2023-03-27 19:43:10,764] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:11,700] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:11,786] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:12,713] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:12,836] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:13,020] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:13,852] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:14,030] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:14,867] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:15,046] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:15,877] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:16,072] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:16,900] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:17,101] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:17,915] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:18,127] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:18,939] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:19,140] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:19,219] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:20,154] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:20,230] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:21,176] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:21,241] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:21,395] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:22,258] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:22,416] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:23,273] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:23,433] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:24,288] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:24,446] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:24,553] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:25,462] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:25,566] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:25,688] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:26,581] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:26,708] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:27,607] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:27,734] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:27,875] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:28,744] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:28,887] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:29,767] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:29,910] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:30,808] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:30,917] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:31,027] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:31,949] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:32,037] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:32,961] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:33,060] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:33,981] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:34,081] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:34,996] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:35,090] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:36,013] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:36,102] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:37,042] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:37,122] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:38,068] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:38,170] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:39,122] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:39,184] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:40,136] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:40,201] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:41,157] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:41,180] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction.py                               1           0  0.26s           2023-03-27T19:40:41
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.20s           2023-03-27T19:43:31
+================================================================================
+[2023-03-27 19:43:41,217] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:42,198] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:42,228] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:43,221] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:43,244] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:44,248] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:44,262] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:45,270] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:45,299] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:46,281] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:46,307] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:47,297] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:47,318] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:48,321] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:48,337] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:49,334] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:49,379] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:49,622] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:50,389] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:50,637] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:51,406] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:51,659] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:52,420] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:52,686] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:53,432] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:53,707] {manager.py:1005} WARNING - Skipping processing of missing file: /opt/airflow/dags/rightmove_extraction.py
+[2023-03-27 19:43:54,445] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 19:43:54,531] {manager.py:687} INFO - There are 1 files in /opt/airflow/dags
+[2023-03-27 19:44:11,250] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.20s           2023-03-27T19:44:11
+================================================================================
+[2023-03-27 19:44:41,493] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.24s           2023-03-27T19:44:19
+================================================================================
+[2023-03-27 19:45:11,807] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.23s           2023-03-27T19:44:49
+================================================================================
+[2023-03-27 19:45:41,917] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py   1615  0.18s             1           0  0.25s           2023-03-27T19:45:27
+================================================================================
+[2023-03-27 19:46:12,439] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.53s           2023-03-27T19:45:59
+================================================================================
+[2023-03-27 19:46:43,043] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.41s           2023-03-27T19:46:30
+================================================================================
+[2023-03-27 19:47:13,514] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.33s           2023-03-27T19:47:00
+================================================================================
+[2023-03-27 19:47:44,009] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.33s           2023-03-27T19:47:31
+================================================================================
+[2023-03-27 19:48:14,518] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.30s           2023-03-27T19:48:01
+================================================================================
+[2023-03-27 19:48:44,972] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.29s           2023-03-27T19:48:32
+================================================================================
+[2023-03-27 19:48:55,045] {manager.py:684} INFO - Searching for files in /opt/airflow/dags
+[2023-03-27 19:48:55,103] {manager.py:687} INFO - There are 1 files in /opt/airflow/dags
+[2023-03-27 19:49:15,372] {manager.py:803} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rightmove_extraction_dag.py                           1           0  0.28s           2023-03-27T19:49:02
+================================================================================
