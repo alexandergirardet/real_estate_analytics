@@ -46,7 +46,6 @@ def check_job_status(**context):
                 print('Job is pending')
             else:
                 raise AirflowException('Job Status returned an error')
-                print('Job Status returned an error')
 
         else:
             print(f"HTTP request failed at {time.strftime('%H:%M:%S')}")
