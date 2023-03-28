@@ -182,7 +182,8 @@ def schedule_job():
 default_args = {
     'owner': 'alex',
     'retries': 5,
-    'retry_delay': timedelta(minutes=2)
+    'retry_delay': timedelta(minutes=2),
+    'max_active_runs': 1
 }
 
 with DAG(

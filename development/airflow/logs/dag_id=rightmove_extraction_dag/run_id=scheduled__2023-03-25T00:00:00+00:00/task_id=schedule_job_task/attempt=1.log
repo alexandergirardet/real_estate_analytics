@@ -32,3 +32,28 @@ KeyError: 'job_id'
 [2023-03-26 03:48:13,113] {standard_task_runner.py:92} ERROR - Failed to execute job 103 for task schedule_job_task ('job_id'; 1899)
 [2023-03-26 03:48:14,261] {local_task_job.py:156} INFO - Task exited with return code 1
 [2023-03-26 03:48:15,304] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-28 20:12:37,159] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.schedule_job_task scheduled__2023-03-25T00:00:00+00:00 [queued]>
+[2023-03-28 20:12:37,273] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: rightmove_extraction_dag.schedule_job_task scheduled__2023-03-25T00:00:00+00:00 [queued]>
+[2023-03-28 20:12:37,275] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 20:12:37,278] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-03-28 20:12:37,281] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 20:12:37,305] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): schedule_job_task> on 2023-03-25 00:00:00+00:00
+[2023-03-28 20:12:37,322] {standard_task_runner.py:52} INFO - Started process 618 to run task
+[2023-03-28 20:12:37,336] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'rightmove_extraction_dag', 'schedule_job_task', 'scheduled__2023-03-25T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/rightmove_extraction_dag.py', '--cfg-path', '/tmp/tmpillgc0gk', '--error-file', '/tmp/tmpvic3im4d']
+[2023-03-28 20:12:37,359] {standard_task_runner.py:80} INFO - Job 11: Subtask schedule_job_task
+[2023-03-28 20:12:37,451] {task_command.py:369} INFO - Running <TaskInstance: rightmove_extraction_dag.schedule_job_task scheduled__2023-03-25T00:00:00+00:00 [running]> on host 7b33de18778c
+[2023-03-28 20:12:37,533] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alex
+AIRFLOW_CTX_DAG_ID=rightmove_extraction_dag
+AIRFLOW_CTX_TASK_ID=schedule_job_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-25T00:00:00+00:00
+[2023-03-28 20:12:37,998] {logging_mixin.py:115} INFO - This is the response: {'node_name': '6fff5f1b0adf', 'status': 'ok', 'jobid': 'e27ec8cecda411edbd2c0242ac130002'}
+[2023-03-28 20:12:38,017] {logging_mixin.py:115} INFO - Job scheduled successfully
+[2023-03-28 20:12:38,019] {python.py:173} INFO - Done. Returned value was: {'jobid': 'e27ec8cecda411edbd2c0242ac130002'}
+[2023-03-28 20:12:38,065] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=rightmove_extraction_dag, task_id=schedule_job_task, execution_date=20230325T000000, start_date=20230328T201237, end_date=20230328T201238
+[2023-03-28 20:12:38,108] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-03-28 20:12:38,164] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
