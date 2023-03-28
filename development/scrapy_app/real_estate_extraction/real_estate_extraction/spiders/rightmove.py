@@ -96,16 +96,16 @@ class RightmoveSpider(scrapy.Spider):
         yield item
 
     def get_outcodes(self) -> list:
-    #     with open('/extraction_data/rightmove_outcodes.csv', 'r') as f:
-    #         reader = csv.reader(f)
-    #         outcodes = list(reader)
-    #         outcodes = outcodes[1:]
-    #         outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
-    #     return outcodes
-    
-        with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/extraction_data/rightmove_outcodes.csv', 'r') as f:
+        with open('/extraction_data/rightmove_outcodes.csv', 'r') as f:
             reader = csv.reader(f)
             outcodes = list(reader)
             outcodes = outcodes[1:]
             outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
         return outcodes
+    
+        # with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/extraction_data/rightmove_outcodes.csv', 'r') as f:
+        #     reader = csv.reader(f)
+        #     outcodes = list(reader)
+        #     outcodes = outcodes[1:]
+        #     outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
+        # return outcodes

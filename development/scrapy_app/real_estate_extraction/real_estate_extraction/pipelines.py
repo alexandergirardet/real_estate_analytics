@@ -26,9 +26,9 @@ class RealEstateExtractionPipeline:
 
         self.bucket_name = 'rightmove_storage_dev'
 
-        # service_account_file = "/.keys/gcp_key.json"
+        service_account_file = "/.keys/gcp_key.json"
 
-        service_account_file = "/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/.keys/gcp_key.json"
+        # service_account_file = "/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/.keys/gcp_key.json"
 
         credentials = service_account.Credentials.from_service_account_file(service_account_file)
         self.client = storage.Client(credentials=credentials)
@@ -71,8 +71,15 @@ class RealEstateExtractionPipeline:
 
         if len(self.items) >= 50:  # Batch size of file
 
-            self.send_items_to_bucket()
+            ids, file_id = self.send_items_to_bucket()
 
+            if file_id is not None:
+                try:
+                    self.send_bulk_ids(ids, file_id, self.now_timestamp)
+                except Exception as e:
+                    print(f"BUCKET SUCCESSFULLY UPLOADED DATA, BUT FAILED TO LOAD IDS TO DB WITH: {e}")
+            else:
+                print("BUCKET FAILED TO UPLOAD DATA, DO NOT UPLOAD IDS TO DB")
         return len(self.items)
     
     # create a function that removes punctuation from a string expect for commas
@@ -101,24 +108,20 @@ class RealEstateExtractionPipeline:
 
         try:
             blob.upload_from_string(data, content_type="application/json")
-            self.send_bulk_ids(ids, file_id, self.now_timestamp)
             print("BUCKET SUCCESSFULLY UPLOADED DATA")
             self.items = []
-            return True
+            return ids, file_id
         except Exception as e:
             print(f"BUCKET FAILED TO UPLOAD DATA: {e}")
-            return False
+            return [], False
 
     def send_bulk_ids(self, id_list, file_id, now_timestamp):
-        """_summary_
+        """Inserts list of ids and metadata into postgres database
 
         Args:
-            id_list (_type_): _description_
-            file_id (_type_): _description_
-            now_timestamp (_type_): _description_
-
-        Returns:
-            int: _description_
+            id_list (list): list of ids to be inserted into the database
+            file_id (str): file id of the file that the ids will be contained in on GCP
+            now_timestamp (datetime): timestamp of when the file was uploaded to GCP
         """
         tuples_to_insert = []
 

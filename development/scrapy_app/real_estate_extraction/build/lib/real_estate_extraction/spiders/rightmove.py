@@ -26,9 +26,12 @@ class RightmoveSpider(scrapy.Spider):
         }
 
         conn = psycopg2.connect(
-            host="localhost",
-            database="rightmove_development",
-            port=5433)
+            host="postgres",
+            database="rightmove",
+            port=5432, 
+            user='airflow', 
+            password='airflow'
+            )
 
         cursor = conn.cursor()
 
@@ -93,16 +96,16 @@ class RightmoveSpider(scrapy.Spider):
         yield item
 
     def get_outcodes(self) -> list:
-    #     with open('/extraction_data/rightmove_outcodes.csv', 'r') as f:
-    #         reader = csv.reader(f)
-    #         outcodes = list(reader)
-    #         outcodes = outcodes[1:]
-    #         outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
-    #     return outcodes
-    
-        with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/extraction_data/rightmove_outcodes.csv', 'r') as f:
+        with open('/extraction_data/rightmove_outcodes.csv', 'r') as f:
             reader = csv.reader(f)
             outcodes = list(reader)
             outcodes = outcodes[1:]
             outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
         return outcodes
+    
+        # with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/extraction_data/rightmove_outcodes.csv', 'r') as f:
+        #     reader = csv.reader(f)
+        #     outcodes = list(reader)
+        #     outcodes = outcodes[1:]
+        #     outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
+        # return outcodes
