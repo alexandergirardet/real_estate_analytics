@@ -1,3 +1,4 @@
+scrapy.cfg
 setup.py
 project.egg-info/PKG-INFO
 project.egg-info/SOURCES.txt
@@ -9,5 +10,6 @@ real_estate_extraction/items.py
 real_estate_extraction/middlewares.py
 real_estate_extraction/pipelines.py
 real_estate_extraction/settings.py
+real_estate_extraction/test.py
 real_estate_extraction/spiders/__init__.py
 real_estate_extraction/spiders/rightmove.py

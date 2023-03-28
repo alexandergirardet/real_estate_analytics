@@ -25,9 +25,9 @@ class RealEstateExtractionPipeline:
 
         self.bucket_name = 'rightmove_storage_dev'
 
-        service_account_file = "/.keys/gcp_key.json"
+        # service_account_file = "/.keys/gcp_key.json"
 
-        # service_account_file = "/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/.keys/gcp_key.json"
+        service_account_file = "/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/.keys/gcp_key.json"
 
         credentials = service_account.Credentials.from_service_account_file(service_account_file)
         self.client = storage.Client(credentials=credentials)
@@ -67,7 +67,7 @@ class RealEstateExtractionPipeline:
 
         print(len(self.items))
 
-        if len(self.items) >= 5:  # Batch size of file
+        if len(self.items) >= 50:  # Batch size of file
 
             self.send_items_to_bucket()
 
@@ -84,6 +84,8 @@ class RealEstateExtractionPipeline:
         if len(self.items) > 0:
 
             self.send_items_to_bucket()
+
+        self.conn.close()
 
     def send_items_to_bucket(self):
         file_id = str(uuid.uuid4())

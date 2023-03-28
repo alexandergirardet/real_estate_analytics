@@ -5,3 +5,4 @@ google-cloud-storage
 scrapy
 bs4
 scrapyd
+psycopg2

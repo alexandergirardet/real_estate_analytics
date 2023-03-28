@@ -76,6 +76,8 @@ RUN set -xe \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && apt-get -y install postgresql && apt-get -y install libpq-dev gcc && apt-get -y install python-dev && apt-get -y install python3-dev 
+
 COPY requirements.txt ./
 COPY extraction_data/ ./extraction_data/
 COPY .keys/ ./.keys/

@@ -1,5 +1,5 @@
 import scrapy
-# import psycopg2
+import psycopg2
 import csv
 
 from bs4 import BeautifulSoup
@@ -10,9 +10,6 @@ class RightmoveSpider(scrapy.Spider):
     name = 'rightmove'
     
     def __init__(self, *args, **kwargs):
-        # conn = psycopg2.connect(
-        #     host="localhost",
-        #     database="real_estate_test")
         
         self.headers = {
         'Accept': 'application/json, text/plain, */*',
@@ -28,11 +25,22 @@ class RightmoveSpider(scrapy.Spider):
         'sec-ch-ua-platform': '"macOS"'
         }
 
-        # cursor = conn.cursor()
+        conn = psycopg2.connect(
+            host="localhost",
+            database="rightmove_development",
+            port=5433)
 
-        # cursor.execute("SELECT outcode, rightmove_code FROM rightmove_outcodes")
+        cursor = conn.cursor()
+
+        cursor.execute("SELECT rightmove_id FROM rightmove_landing_zone")
+
+        fetched_ids = cursor.fetchall()
+
+        self.rightmove_ids = [int(x[0]) for x in fetched_ids]
 
         self.fetched_outcodes = self.get_outcodes()
+
+        conn.close()
 
     def start_requests(self):
         for codes in self.fetched_outcodes:
@@ -48,9 +56,13 @@ class RightmoveSpider(scrapy.Spider):
         for listing in listings:
 
             property_id = listing['id']
-            property_url = f"https://www.rightmove.co.uk/properties/{property_id}"
 
-            yield scrapy.Request(method='GET', url = property_url, headers= self.headers, callback=self.parse_property, meta={"item":listing})
+            if property_id not in self.rightmove_ids:
+                property_url = f"https://www.rightmove.co.uk/properties/{property_id}"
+
+                yield scrapy.Request(method='GET', url = property_url, headers= self.headers, callback=self.parse_property, meta={"item":listing})
+            else:
+                print("Already loaded in")
 
     def parse_property(self, response):
         soup = BeautifulSoup(response.text, 'lxml')
@@ -81,16 +93,16 @@ class RightmoveSpider(scrapy.Spider):
         yield item
 
     def get_outcodes(self) -> list:
-        with open('/extraction_data/rightmove_outcodes.csv', 'r') as f:
+    #     with open('/extraction_data/rightmove_outcodes.csv', 'r') as f:
+    #         reader = csv.reader(f)
+    #         outcodes = list(reader)
+    #         outcodes = outcodes[1:]
+    #         outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
+    #     return outcodes
+    
+        with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/extraction_data/rightmove_outcodes.csv', 'r') as f:
             reader = csv.reader(f)
             outcodes = list(reader)
             outcodes = outcodes[1:]
             outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
         return outcodes
-    
-        # with open('/Users/alexandergirardet/projects/estatewise/real_estate_analytics/development/scrapy_app/extraction_data/rightmove_outcodes.csv', 'r') as f:
-        #     reader = csv.reader(f)
-        #     outcodes = list(reader)
-        #     outcodes = outcodes[1:]
-        #     outcodes = [(outcode[1], outcode[2]) for outcode in outcodes]
-        # return outcodes

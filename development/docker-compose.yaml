@@ -84,3 +84,5 @@ services:
       - ./data:/var/lib/scrapyd
       - /usr/local/lib/python3.9/dist-packages
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
