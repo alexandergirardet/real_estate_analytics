@@ -26,9 +26,12 @@ class RightmoveSpider(scrapy.Spider):
         }
 
         conn = psycopg2.connect(
-            host="localhost",
-            database="rightmove_development",
-            port=5433)
+            host="postgres",
+            database="rightmove",
+            port=5432, 
+            user='airflow', 
+            password='airflow'
+            )
 
         cursor = conn.cursor()
 

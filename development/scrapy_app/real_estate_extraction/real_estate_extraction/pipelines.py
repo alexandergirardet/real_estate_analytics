@@ -11,6 +11,7 @@ import string
 import json
 import uuid
 import datetime
+import psycopg2
 
 from google.cloud import storage
 from google.oauth2 import service_account
@@ -32,12 +33,13 @@ class RealEstateExtractionPipeline:
         credentials = service_account.Credentials.from_service_account_file(service_account_file)
         self.client = storage.Client(credentials=credentials)
 
-        import psycopg2
-
         self.conn = psycopg2.connect(
-                    host="localhost",
-                    database="rightmove_development",
-                    port=5433) # Port 5432 is already in use by the airflow container
+            host="postgres",
+            database="rightmove",
+            port=5432, 
+            user='airflow', 
+            password='airflow'
+            )
 
         self.cursor = self.conn.cursor()
 
